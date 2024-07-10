@@ -1,0 +1,117 @@
+.upcoming-wrapper {
+  padding: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Changed for vertical alignment */
+}
+
+.upcoming-title {
+  font-family: Heavitas;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40.61px;
+  text-align: left;
+  color: #ff7e35;
+  margin-bottom: 20px;
+  padding-left: 70px;
+}
+
+.upcoming-image {
+  height: 75vh;
+  width: 45vw;
+  position: relative;
+}
+
+.poster {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  border-radius: 40px;
+}
+
+.visit-now {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.visit-now a {
+  color: #ff7e35;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.upcoming-details {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 45vw;
+  margin-left: 5%;
+}
+
+.options {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.tab {
+  font-family: Futura Hv BT;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22.34px;
+  text-align: left;
+  margin-right: 20px; /* Added spacing between titles */
+  cursor: pointer;
+}
+
+.tab.active {
+  color: #ff7e35;
+}
+
+.tab:not(.active) {
+  color: white;
+}
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-item {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.blog-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.blog-title {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.latest-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.latest-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  line-height: 1.4;
+}

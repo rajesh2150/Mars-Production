@@ -1,0 +1,9 @@
+.partner-image{
+height: 50vh;
+width: 30vw;
+}
+.partner-imagetobe-added{
+    width: 51%;
+    height: 75%;
+    background-color: lightgray;
+}

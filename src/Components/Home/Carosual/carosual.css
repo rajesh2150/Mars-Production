@@ -1,0 +1,117 @@
+.carosual-wrapper {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 80vh;
+   width: 65vw;
+   margin-top: 50px;
+   margin-left: 100px;
+   background-color: #444444;
+   padding: 10px;
+   z-index: 100;
+  }
+  .carosual-top {
+   width: 148px;
+   height: 75px;
+   top: -3970px;
+   left: 2820px;
+   gap: 0px;
+   opacity: 0px;
+  }
+  .carosual-title-wrapper {
+   display: flex;
+   height: 80%;
+   justify-content: space-between;
+   /* margin-top: 150px; */
+   padding: 10px;
+  }
+  .carosual-details {
+   margin-top: 120px;
+  }
+  
+  .carosual-heading {
+   font-family: Heavitas;
+   font-size: 48px;
+   font-weight: 400;
+   line-height: 48.74px;
+   text-align: left;
+   color: #ffffff;
+   text-transform: uppercase;
+    gap:10px
+  }
+  .carosual-paragraph {
+   font-family: Futura Hv BT;
+   font-size: 24px;
+   font-weight: 400;
+   line-height: 24.37px;
+   text-align: left;
+   color: #ffffff;
+  }
+  .carosual-link {
+   font-family: Futura Hv BT;
+   font-size: 36px;
+   font-weight: 400;
+   line-height: 36.55px;
+   text-align: left;
+   color: #ff7e35;
+  }
+  
+  .carosual-image {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .carousel-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.carousel-slide {
+  position: relative;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.carousel-caption h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.carousel-caption p {
+  margin: 5px 0 10px 0;
+}
+
+.carousel-link {
+  color: #ff7e35;
+  text-decoration: none;
+  font-weight: bold;
+} */

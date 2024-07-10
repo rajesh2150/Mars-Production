@@ -1,0 +1,64 @@
+.how-we-work {
+    padding: 8%;
+    color: white;
+  }
+  
+  .how-we-work-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* border: 1px solid red; */
+  }
+  
+  .description-wrapper {
+    flex: 1;
+    margin-right: 40px;
+  }
+  
+  .title {
+    font-family: Heavitas;
+    font-size: 40px;
+    font-weight: 400;
+    color: #ff7e35;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-family: Futura Hv BT;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24.37px;
+    text-align: left;
+    
+    max-width: 75%;
+  }
+  
+  .logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-right: 5%;
+    padding-top: 8%;
+  }
+  
+  .logo-item {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .image{
+    margin-right: 2%;
+  }
+  
+  .logo-item img {
+    max-width: 150px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  
+
+  }
+  
+  .logo-item p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  

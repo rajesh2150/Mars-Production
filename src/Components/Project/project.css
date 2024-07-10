@@ -1,0 +1,24 @@
+.project-wrapper{
+    padding-left:12% ;
+    padding-top: 2%;
+}
+.project{
+    margin-bottom: 5%;
+    display: flex;
+
+}
+.project-video{
+    height: 90%;
+    width: 90%;
+    padding: 10%;
+    object-fit: cover;
+}
+.ongoing-image{
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
+}
+.project-ongoing{
+  
+    padding-left: 5%;
+}

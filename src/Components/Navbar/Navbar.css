@@ -1,0 +1,45 @@
+.navbar-wrapper {
+  display: flex;
+  flex: 300px 1fr;
+  justify-content: space-between;
+  padding: 10px;
+  position: sticky;
+  top: 10px;
+  left: 10px;
+}
+.navbar-company-title-div {
+  padding-left: 15px;
+ 
+
+}
+
+.company-title-p {
+  font-family: "Heavitas";
+  font-family: Heavitas;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24.37px;
+  text-align: left;
+  color: #FF7E35;;
+}
+
+.navbar-links {
+  display: flex;
+  color:white;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  font-family: "futura-hv-bt", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22.34px;
+  text-align: left;
+}
+.NavLink{
+    color: white;
+    text-decoration: none;
+}
+.active{
+    color: #FF7E35;
+    
+}
