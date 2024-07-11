@@ -1,0 +1,52 @@
+.news-p {
+  text-transform: uppercase;
+  /* font-family: Futura Hv BT;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24.37px;
+  text-align: left; */
+}
+.news-p2 {
+  font-family: Futura Hv BT;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24.37px;
+  text-align: left;
+  padding: 1% 0%;
+}
+.news-link {
+  text-decoration: underline;
+  font-family: Futura Hv BT;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24.37px;
+  text-align: left;
+}
+.news-wrapper{
+    padding: 3% 0;
+}
+.news-image {
+  background-color: transparent;
+  height: 60vh;
+  width: 50vw;
+}
+.news-poster {
+  height: 55vh;
+  width: 40vw;
+  object-fit: fill;
+}
+.previou-p{
+    text-transform: uppercase;
+    padding: 12% 0;
+}
+.prev-news-image{
+    height: 150px;
+    width: 150px;
+    background-color: lightgray;
+    object-fit: cover;
+}
+.previous-news-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
