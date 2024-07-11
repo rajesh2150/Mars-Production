@@ -1,117 +1,93 @@
-.carosual-wrapper {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   height: 80vh;
-   width: 65vw;
-   margin-top: 50px;
-   margin-left: 100px;
-   background-color: #444444;
-   padding: 10px;
-   z-index: 100;
-  }
-  .carosual-top {
-   width: 148px;
-   height: 75px;
-   top: -3970px;
-   left: 2820px;
-   gap: 0px;
-   opacity: 0px;
-  }
-  .carosual-title-wrapper {
-   display: flex;
-   height: 80%;
-   justify-content: space-between;
-   /* margin-top: 150px; */
-   padding: 10px;
-  }
-  .carosual-details {
-   margin-top: 120px;
-  }
-  
-  .carosual-heading {
-   font-family: Heavitas;
-   font-size: 48px;
-   font-weight: 400;
-   line-height: 48.74px;
-   text-align: left;
-   color: #ffffff;
-   text-transform: uppercase;
-    gap:10px
-  }
-  .carosual-paragraph {
-   font-family: Futura Hv BT;
-   font-size: 24px;
-   font-weight: 400;
-   line-height: 24.37px;
-   text-align: left;
-   color: #ffffff;
-  }
-  .carosual-link {
-   font-family: Futura Hv BT;
-   font-size: 36px;
-   font-weight: 400;
-   line-height: 36.55px;
-   text-align: left;
-   color: #ff7e35;
-  }
-  
-  .carosual-image {
-   height: 100%;
-   width: 100%;
-   object-fit: cover;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .carousel-container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.carousel-slide {
+.carousel-wrapper {
   position: relative;
+  width: 65vw;
+  height: 80vh;
+  margin: 5% 10%;
+  background-color: #444444;
+  padding: 1% 3%;
 }
 
-.carousel-image {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-.carousel-caption {
+.carousel-item {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
-  color: white;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  border-radius: 5px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 4.5s;
 }
 
-.carousel-caption h2 {
-  margin: 0;
+.carousel-item.fade-in {
+  opacity: 1;
+}
+
+.carousel-item.fade-out {
+  opacity: 0;
+}
+
+.carousel-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+}
+
+.carousel-details {
+  max-width: 50%;
+}
+
+.carousel-heading {
+  font-family: Heavitas;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 48.74px;
+  text-align: left;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 1%;
+}
+
+.carousel-paragraph {
+  font-family: "Futura Hv BT";
   font-size: 24px;
-}
-
-.carousel-caption p {
-  margin: 5px 0 10px 0;
+  font-weight: 400;
+  line-height: 24.37px;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .carousel-link {
+  font-family: "Futura Hv BT";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36.55px;
+  text-align: left;
   color: #ff7e35;
   text-decoration: none;
-  font-weight: bold;
-} */
+}
+
+.carousel-image {
+  height: 90%;
+  width: 100%;
+  object-fit: contain;
+
+}
+
+.paragraphs {
+  padding: 5%;
+}
+.carosual-top{
+  height: 15%;
+  width: 15%;
+  object-fit: cover;
+}
+.carousel-second{
+  padding-left: 1%;
+}
+.carousel-image-one{
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+}

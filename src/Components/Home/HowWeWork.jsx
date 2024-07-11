@@ -10,18 +10,18 @@ const HowWeWork = () => {
           <p className="description">
             Mars Movie Productions is designed to provide an end-to-end support to
             the Film Field Aspirants in any vertical of film making.
-            <br />
-            <br />
+            <br/>
+            <br/>
             We @ Mars believe that the industry is in the dire need of the
             following precepts to bring in a new era.
-            <br />
-            <br />
+            <br/>
+            <br/>
             <b>Transparency</b>: Everything is kept open for the aspirants to see
             what is happening to them and their talents and resources. Nothing is
             hidden. One can see the stages of life cycle of their investment - be
             it money or talent or resource.
-            <br />
-            <br />
+            <br/>
+            <br/>
             <b>Optimized process</b>: Technology is developed to ensure that every
             effort is best shaped, resources optimally utilized, timelines kept,
             value-diminishing processes removed, and wastage minimized. Every
