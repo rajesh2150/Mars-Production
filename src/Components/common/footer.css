@@ -6,3 +6,15 @@
 ;
 margin-top: 5%;
 }
+.icon{
+    height: 100px;
+    width: 100px;
+    object-fit: fill;
+}
+@media(max-width:769px){
+    .icon{
+        height: 50px;
+        width: 50px;
+        object-fit: cover;
+    }
+}

@@ -33,7 +33,7 @@ const Home = () => {
       <div className="home-globe">
         <Globe height={300} width={300} />
       </div>
-      <div>
+      <div className="carosual-div">
         <Carosual />
       </div>
     </div>
