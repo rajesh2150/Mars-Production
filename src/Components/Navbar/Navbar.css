@@ -6,6 +6,7 @@
   position: sticky;
   top: 10px;
   left: 10px;
+  z-index: 1000;
 }
 .navbar-company-title-div {
   padding-left: 15px;

@@ -37,11 +37,12 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 2%;
+    padding-top: 5%;
   }
   
   .partner-image-tobe-added {
-    height: 50vh;
-    width: 25vw;
+    height: 70vh;
+    width: 20vw;
     background-color: lightgray;
     border-radius: 20px;
     margin-right: 20px;

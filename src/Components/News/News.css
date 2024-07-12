@@ -6,6 +6,9 @@
   line-height: 24.37px;
   text-align: left; */
 }
+.news-wrapper{
+  padding-top: 0px;
+}
 .news-p2 {
   font-family: Futura Hv BT;
   font-size: 24px;
@@ -27,13 +30,14 @@
 }
 .news-image {
   background-color: transparent;
-  height: 60vh;
+  height: 40vh;
   width: 50vw;
 }
 .news-poster {
-  height: 55vh;
+  height: 50vh;
   width: 40vw;
   object-fit: fill;
+  border-radius: 0px;
 }
 .previou-p{
     text-transform: uppercase;

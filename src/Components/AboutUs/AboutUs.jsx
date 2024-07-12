@@ -5,14 +5,8 @@ import "../common/footer.css";
 const AboutUs = () => {
   return (
     <>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-        }}>
-        <div className="main-div">
+      <div>
+        <div className="main-div about-us-main">
           <div className="left-side">
             <div className="leftside-one">
               <p className="p1">Mars Productions Private Limited</p>

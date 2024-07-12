@@ -33,7 +33,7 @@ const HowWeWork = () => {
         <div className="logos">
           <div className="logo-item">
             <img
-            className='image'
+              className='image'
               src="https://s3-alpha-sig.figma.com/img/8d1f/b030/5fa299c08cc226fe41e230398a485c4a?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LSdfaunRu6l4Hf81dAdcHlNlmC90h881WOtU8xjtdNA0lgmFm0~2EpxRKscEF9jebQwc-wEYFluNq873P99r~UVqTwovumRN3qy3XwheByRs7k2ia~EfPxX-fI6s06~N074PW6-YRw61Das~9ToqNVLm4WKhwhKNo3u7wlaI0JkrRCTJF1AejpmQSSnY4G0xfz~m8Bo64BxzVKQ36ArsmtNzmk4oquMV~6cW3NiJ0CeH87-IO2ujMpAjSxawvY8BqLVcU4OVcKIgfnv7RG41tiO7XFCaHSizdbq5fOFp2jZ0C72lFndqmptCrrwWPeNAcIZoylRVTexDqrzwKqeI7Q__"
               alt="Calle Vapor"
             />
@@ -41,7 +41,7 @@ const HowWeWork = () => {
           </div>
           <div className="logo-item">
             <img
-             className='image'
+              className='image'
               src="https://s3-alpha-sig.figma.com/img/cf1b/a18e/e3a15424392af70d93d47e19bcb47b4c?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ktmCZdxsZ~S4OUD7befOJh5Hr0KXYQ0jBTTsnzeRnXnwbd927lgvAKFyusHW2cgFCAUWU7cp3BqofwTngUK3yfmSngnOfrF9kYprEER9ydoB30jps0xjT6PCOJ4WoKa1460s2fEeUEEtC~w9dzM8GUX96jNQh-OK9vDPkjsxG5ClW48U9~h3GCtwj24pmveSCg27ErYL~E~in4dolXEW5Jnar1-r0QBQydxnqIuB1F1dRRPzXNSLTqjccONKpSYyrgPjgbELz~p2BXG6snQDPn8wqcynShcnc257TPCmqnqjkJVcLPgg5jCVuaTz6OgFioUY8LzLqhkG5URVbuC3mA__"
               alt="Mee Meemulu"
             />

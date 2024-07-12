@@ -5,7 +5,8 @@
 .project{
     margin-bottom: 5%;
     display: flex;
-
+    height: 75vh;
+    width: 70vw;
 }
 .project-video{
     height: 90%;
@@ -41,25 +42,33 @@
 }
 .project-ongoing {
     display: flex;
-    justify-content: space-between;
+    flex: 0.4 0.6;
+    /* justify-content: space-between; */
     align-items: center;
     margin: 0 auto;
-    max-width: 80%;
-    /* padding: 2%; */
+    max-width: 100%;
+    padding: 2%;
     /* background-color: #2c2c2c; Adjust the background color as needed */
     border-radius: 10px;
+    background-color: #2c2c2c;
+  }
+  .ongoing-details{
+    flex: 0.4;
   }
   .ongoing-p1{
-    margin-top: 8%;
+    margin-top: 18%;
   }
   .ongoing-main {
     display: flex;
     justify-content: start;
     align-items: start;
     padding-top: 8%;
-    /* padding-left: 5%; */
-    height: 60vh;
-    width: 80vw;
+    padding-left: 5%;
+    height: 65vh;
+  width: 70vw;
+  border-radius: 50px;
+    /* background-color: black; */
+    
   }
   
   .ongoing-main > div {
@@ -68,8 +77,8 @@
   
   .ongoing-image {
     width: 30vw;
-    height: 30vh;
-    border-radius: 10px;
+    height: 40vh;
+    /* border-radius: 10px; */
     margin-left: 20px;
     object-fit: fill;
   }
@@ -96,7 +105,7 @@
   }
   .ongoing-desc-p2{
     font-family: Futura Hv BT;
-    font-size: 28px;
+    font-size: 100%;
     font-weight: 400;
     line-height: 28.43px;
     text-align: left;

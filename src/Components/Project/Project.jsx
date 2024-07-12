@@ -41,7 +41,7 @@ const Project = () => {
         </p>
         <div className=" ">
           <div className="project-ongoing ongoing-main">
-            <div >
+            <div className="">
               <p className="p1" style={{ color: "white" }}>
                 Mounam by Taanvi Talkies
               </p>

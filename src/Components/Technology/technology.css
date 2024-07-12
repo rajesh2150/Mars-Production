@@ -1,14 +1,15 @@
 .project-wrapper {
-    padding: 5% 15%;
+    padding: 2% 15%;
 }
 
 .main-div {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     /* gap: 40px; */
 }
 .tech-main{
     justify-content: center;
+    flex-direction: column;
 }
 .sub-div {
     display: flex;

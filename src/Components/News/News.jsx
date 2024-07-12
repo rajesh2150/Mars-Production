@@ -33,7 +33,7 @@ const News = () => {
 ]
   return (
     <>
-      <div className="project-wrapper">
+      <div className="project-wrapper ">
         <p className="p1  news-p">Newsletter</p>
         <p className="p2 news-p2">This is our latest newsletter.</p>
         <p className="p2 news-p2">
