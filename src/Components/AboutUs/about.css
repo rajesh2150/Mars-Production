@@ -6,8 +6,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 2%;
   border-radius: 50px;
+}
+.about-us-wrapper{
+  padding-left: 13%;
+  /* border: 1px solid red; */
 }
 .about-us-main{
   display: flex;

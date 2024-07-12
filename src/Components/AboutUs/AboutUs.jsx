@@ -5,7 +5,7 @@ import "../common/footer.css";
 const AboutUs = () => {
   return (
     <>
-      <div>
+      <div className="about-us-wrapper">
         <div className="main-div about-us-main">
           <div className="left-side">
             <div className="leftside-one">

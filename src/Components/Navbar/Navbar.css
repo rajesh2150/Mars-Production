@@ -1,46 +1,90 @@
 .navbar-wrapper {
   display: flex;
-  flex: 300px 1fr;
   justify-content: space-between;
   padding: 10px;
   position: sticky;
-  top: 10px;
-  left: 10px;
+  top: 0;
+  left: 0;
   z-index: 1000;
+  /* background-color: #333; Example background color */
 }
+
 .navbar-company-title-div {
   padding-left: 15px;
- 
-
 }
 
 .company-title-p {
   font-family: "Heavitas";
-  font-family: Heavitas;
   font-size: 24px;
   font-weight: 400;
-  line-height: 24.37px;
   text-align: left;
-  color: #FF7E35;;
+  color: #FF7E35;
 }
 
 .navbar-links {
   display: flex;
-  color:white;
+  color: white;
   justify-content: space-around;
   align-items: center;
   gap: 30px;
   font-family: "futura-hv-bt", sans-serif;
   font-size: 22px;
   font-weight: 400;
-  line-height: 22.34px;
   text-align: left;
 }
-.NavLink{
-    color: white;
-    text-decoration: none;
+
+.NavLink {
+  color: white;
+  text-decoration: none;
 }
-.active{
-    color: #FF7E35;
-    
+
+.active {
+  color: #FF7E35;
+}
+
+.burgermenu {
+  display: none;
+  padding-right: 2%;
+  cursor: pointer;
+}
+
+.burgermenu div {
+  height: 0.3rem;
+  width: 2rem;
+  margin: 2px;
+  background-color: white;
+}
+
+.burger-links {
+  display: none;
+  flex-direction: column;
+  background-color: #333; /* Example background color */
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.burger-links.show {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .navbar-wrapper{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+  }
+  .burgermenu {
+    display: block;
+  }
+
+  .show-menu {
+    display: none;
+  }
+
+  .burger-links.show {
+    display: flex;
+  }
 }
