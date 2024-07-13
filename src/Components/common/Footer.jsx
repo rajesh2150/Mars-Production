@@ -11,7 +11,7 @@ const Footer = () => {
     ]
   return (
     <div className='footer-wrapper'>
-      <div></div>
+      <div className='empty-div'></div>
       <div>
        {/* <img src={icons[0]} height={162} width={162}/> */}
        <img className='icon' src={icons[1]} />

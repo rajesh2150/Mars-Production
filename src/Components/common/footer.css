@@ -2,19 +2,32 @@
     display: flex;
     justify-content: space-between;
     background-color: #343235CC;
-    padding-right: 5%
-;
+    padding-right: 5%;
 margin-top: 5%;
+position: static;
+bottom: 0px;
+left: 0pc;
+
 }
 .icon{
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
     object-fit: fill;
 }
 @media(max-width:769px){
+    .footer-wrapper{
+        display: flex;
+        justify-content: space-around;
+        position: sticky;
+        bottom: 0px;
+        left: 0px;
+    }
     .icon{
         height: 50px;
         width: 50px;
         object-fit: cover;
+    }
+    .empty-div{
+        display: none;
     }
 }
