@@ -2,6 +2,7 @@ import React from "react";
 import "./project.css";
 import Footer from "../common/Footer";
 const Project = () => {
+  
   return (
     <>
       <div className="project-wrapper">
@@ -21,13 +22,13 @@ const Project = () => {
               a Heaven like place.
             </p>
           </div>
-          <div>
-            <img
-              style={{ backgroundColor: "lightgray" }}
-              height={300}
-              width={500}
+          {/* <div> */}
+            <img className="project-image"
+              // style={{ backgroundColor: "lightgray" }}
+              // height={300}
+              // width={500}
             />
-          </div>
+          {/* </div> */}
         </div>
         <p className="p1">Latest Movie Teaser</p>
         <div className="main-div">
@@ -42,17 +43,17 @@ const Project = () => {
         <div className=" ">
           <div className="project-ongoing ongoing-main">
             <div className="">
-              <p className="p1" style={{ color: "white" }}>
+              <p className="p1 ongoing-p1-title" style={{ color: "white" }}>
                 Mounam by Taanvi Talkies
               </p>
               <p className="p2 ongoing-desc-p2">More details will be updated soon.</p>
             </div>
-            <div>
+            {/* <div> */}
               <img
                 className="ongoing-image"
                 src="https://s3-alpha-sig.figma.com/img/69fb/4f31/8698bb94a30fd303ec0fc8a4f6fb36cd?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ciNrGlcrRK3YwJwVQz7lwYzAjkkB7t~ETMzYDMCpG0FmYKGGF2Rfi3ZArhoWuYqvwMEO~TAFcYwz~~Rujkd4TtGuWyhMWRFh-M8zqASpSxN44vq4pnRyOvBWaM9ywbTz-mFZd8SIMFR5VQ8noNeZIRWKurwPVlHSCyUz7mrbfdACP0kunJFDenIlD84L9UgkoAFwV8Vekt-mJhSzCLFaKWvDMQn1Vk7S6pcNFQuNEFlJUf2kZazm1cuyNE9~uwWtP2V-y4aajyS87UAOt0SiDa36R9Mi6RW-uXEwqB8cff3wZA06R8P6pIN5xOA~xii8YjOPNc8Wfgm-oGdLVktZbA__"
               />
-            </div>
+            {/* </div> */}
           </div>
         </div>
       </div>
