@@ -9,29 +9,12 @@ import Footer from "../common/Footer";
 const Home = () => {
   const [rotation, setRotation] = useState([0, 0]); // Initial rotation (longitude, latitude)
   const globeEl = useRef(null);
-
-  const handleRotateGlobe = (newRotation) => {
-    setRotation(newRotation);
-  };
-
-  // Optional initial rotation animation
-  useEffect(() => {
-    const animateRotation = () => {
-      setRotation((prevRotation) => {
-        const newX = prevRotation[0] + 0.2; // Adjust speed as desired
-        return [newX % 360, prevRotation[1]]; // Loop 360 degrees for longitude
-      });
-    };
-
-    const intervalId = setInterval(animateRotation, 100); // Adjust interval for animation speed
-
-    return () => clearInterval(intervalId); // Clean up interval on unmount
-  }, []);
+const globeImgUrl="https://www.solarsystemscope.com/textures/download/2k_mars.jpg";
 
   return (<>
     <div className="home-wrapper">
       <div className="home-globe">
-        <Globe height={300} width={300} />
+        <Globe ref={globeEl}  globeImageUrl={globeImgUrl} bumpImageUrl={globeImgUrl} backgroundImageUrl={globeImgUrl} height={300} width={300} />
       </div>
       <div className="carosual-div">
         <Carosual />

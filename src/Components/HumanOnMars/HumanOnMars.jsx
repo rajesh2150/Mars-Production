@@ -31,7 +31,7 @@ const HumanOnMars = () => {
   return (
     <>
       <div className="team-wrapper">
-        <p className="p1" style={{ marginBottom: "5%" }}>
+        <p className="p1 team-p1" style={{ marginBottom: "5%" }}>
           THE TEAM
         </p>
         <div className="team-members">
