@@ -9,8 +9,8 @@ const AboutUs = () => {
         <div className="main-div about-us-main">
           <div className="left-side">
             <div className="leftside-one">
-              <p className="p1">Mars Productions Private Limited</p>
-              <p className="p2">
+              <p className=" aboutus-p1">Mars Productions Private Limited</p>
+              <p className=" aboutus-p2">
                 Mars Productions Private Limited is a Film & Technology
                 Production company located at Sri Kalahasthi, Andhra Pradesh,
                 India. Mars Productions Private Limited is registered with the
@@ -21,8 +21,8 @@ const AboutUs = () => {
               </p>
             </div>
             <div className="leftside-two">
-              <p className="p1">Founders Note</p>
-              <p className="p2">
+              <p className=" aboutus-p1">Founders Note</p>
+              <p className=" aboutus-p2">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
@@ -31,14 +31,15 @@ const AboutUs = () => {
           </div>
           <div className="right-side">
             <img
+            className="right-side-image"
               src="path_to_your_image.jpg"
-              height={200}
-              width={180}
-              style={{
-                backgroundColor: "lightgray",
-                borderRadius: "15px",
-                marginBottom: "2%",
-              }}
+              // height={200}
+              // width={180}
+              // style={{
+              //   backgroundColor: "lightgray",
+              //   borderRadius: "15px",
+              //   marginBottom: "2%",
+              // }}
               alt="Company Logo"
             />
             <p>
@@ -59,12 +60,12 @@ const AboutUs = () => {
 
               </div>
               
-            <div>
+            {/* <div> */}
               <img
                 className="about-image "
                 src="https://s3-alpha-sig.figma.com/img/04ca/e612/cc829f28cb4f3ea28af16dc99e58cabb?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OPpwqHfr99euHw~RKSn1BS3KEecTeW8b7KYL-dXhMkEsP89xzNcJFq-UAERltI6pKBfpTXeKDxOR613LWuBWBFPUy~Iw8hRGtru5cc9OQ6RFaNEhIqE9MfiSDPWGkQj6mnjv9-A4VYNbj0Fj2XQmcrY3qRyft3VliP-8DlTZlC-YmSxVz2YhyqX67u4CPomNJdc8UaCIfKelGBe2AHnAAc85ubK0GoVBgGe5iJux76QzMuT3YEFUTLTl5fe-TQfj4DHYWrQH~BhfpIBXqs7KQ1LRq5dAosBNoiXQD8-4UQ76eCf3rtAufcSnrqKutdpzp8ZOlIJhTm30YkazmNEkGw__"
                 />
-                </div>
+                {/* </div> */}
             </div>
 
             <div className="about-leftside-1">
