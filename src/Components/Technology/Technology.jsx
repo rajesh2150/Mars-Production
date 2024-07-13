@@ -6,10 +6,10 @@ const Technology = () => {
   return (
     <>
       <div className="project-wrapper">
-        <div className="main-div tech-main">
+        <div className="main-div-tech tech-main">
           <div className="sub-div">
             <div className="text-content">
-              <p className="p1">SINEMA</p>
+              <p className="p1 tech-p1-content">SINEMA</p>
               <p className="p2">
                 Our cutting edge end-to-end film production management software
                 ensures that each stage of the production is transparently and
