@@ -55,12 +55,16 @@ const Project = () => {
               />
             {/* </div> */}
           </div>
+          
         </div>
+        
       </div>
-
       <Footer />
+      
     </>
+    
   );
+  
 };
 
 export default Project;

@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 2%;
-  border-radius: 50px;
+  border-radius: 2%;
 }
 .about-us-wrapper{
   padding-left: 13%;
@@ -85,7 +85,7 @@ object-fit: contain;
   height: 200px;
   width: 180px;
   background-color: lightgray;
-  border-radius: 1.5%;
+  border-radius: 2%;
   margin-bottom: 2%;
 
 }
@@ -102,7 +102,7 @@ object-fit: contain;
   justify-content: center;
   align-items: center;
   padding: 3%;
-  border-radius: 50px;
+  border-radius: 2%;
 
 }
 .about-leftside-1{
@@ -128,17 +128,16 @@ max-width: 75%;
     background-color: #343235;
     display: flex;
     flex-direction:column-reverse;
-    /* justify-content: space-between; */
     align-items: center;
     padding: 2%;
-    border-radius: 3%;
+    border-radius: 2%;
   }
   .about-us-main{
     display: flex;
     flex-direction: column-reverse;
   }
   .aboutus-p1{
-    font-family: 'Futura Hv BT';
+  font-family: 'Futura Hv BT';
   font-size: 20px;
   font-weight: 400;
   line-height: 85%;
@@ -148,7 +147,7 @@ max-width: 75%;
   
   }  
   .aboutus-p2{
-    font-family: Futura Bk BT;
+  font-family: Futura Bk BT;
   font-size: 14px;
   font-weight: 400;
   line-height: 100%;
@@ -162,27 +161,19 @@ max-width: 75%;
     object-fit: cover;
   }
   .left-side {
-    /* flex: 0.7;  */
     color: white;
     padding: 5px;
   }
-  /* .right-side-image{
-    height: 50%;
-    width: 58%;
-    background-color: lightgray;
-    border-radius: 1.5%;
-    margin-bottom: 2%;
   
-  } */
   .right-side p{
     font-family: 'Futura Hv BT';
-font-size: 13px;
-font-weight: 400;
-line-height: 13px;
-text-align: left;
-padding:1% 8% 2% 8% ;
-
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 13px;
+    text-align: left;
+    padding:1% 8% 2% 8% ;
     max-width: 90%;
+    
   }
   .about-image{
     height: 30vh;

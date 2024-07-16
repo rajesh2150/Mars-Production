@@ -96,6 +96,7 @@
     color: white;
     max-width: 80%;
   }
+  
   @media(max-width:769px){
     .project-wrapper {
       padding: 5% 3%;

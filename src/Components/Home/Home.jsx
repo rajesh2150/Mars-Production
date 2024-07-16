@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState,useEffect, useRef } from "react";
 import Carosual from "./Carosual/Carosual";
 import Globe from "react-globe.gl";
 import "./Home.css";
