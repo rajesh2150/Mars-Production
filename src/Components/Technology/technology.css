@@ -75,6 +75,7 @@
 @media(max-width:769px){
     .project-wrapper{
         height: 100vh;
+        /* border-radius: 20px; */
     }
 
         .sub-div {
@@ -85,6 +86,8 @@
             /* gap: 20px; */
             padding: 3%;
             background-color: #343235CC;
+            border-radius: 20px;
+            margin: 15px ;
             
         
         }
@@ -93,7 +96,7 @@
             height: 20vh;
             object-fit: fill;
             /* padding-left: 30%; */
-            /* border-radius: 10px; */
+            border-radius: 8px;
         }
         .image-content img {
             width: 50vw;

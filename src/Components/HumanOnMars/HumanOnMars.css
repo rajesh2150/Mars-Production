@@ -135,16 +135,17 @@ color: white;
     border-radius: 10%;
   }
   .carrer-wrapper{
-    margin-top: 20%;
-    margin-bottom: 30%;
+    margin-top: 0%;
+    margin: 8px 0px 0px 20px;
+    width: 80vw;
   }
   .carrer-p{
     font-family: Heavitas;
-font-size: 30px;
-font-weight: 400;
-line-height: 30.61px;
-text-align: left;
-color: #FF7E35;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30.61px;
+    text-align: left;
+    color: #FF7E35;
 }
 .carrer-form{
 

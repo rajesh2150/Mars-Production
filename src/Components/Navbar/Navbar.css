@@ -1,7 +1,8 @@
 .navbar-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding-block: 10px;
+  padding-inline: 2rem;
   position: sticky;
   top: 0;
   left: 0;
@@ -10,8 +11,20 @@
 }
 
 .navbar-company-title-div {
-  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
+
+.navbar-company-title-div img {
+  max-width: 100%;
+  height: auto;
+  max-height: 60px; 
+  object-fit: contain; 
+}
+
 
 .company-title-p {
   font-family: "Heavitas";
@@ -75,6 +88,8 @@
     position: sticky;
     top: 0px;
     left: 0px;
+    padding-inline: 1rem;
+    
   }
   .burgermenu {
     display: block;

@@ -34,7 +34,7 @@ const News = () => {
   return (
     <>
       <div className="project-wrapper news-hero-wrapper ">
-        <p className="p1  news-p">Newsletter</p>
+        <p className="p1  news-p">News letter</p>
         <p className="p2 news-p2">This is our latest newsletter.</p>
         <p className="p2 news-p2">
           To view all our previous newsletters, go to
@@ -157,11 +157,12 @@ const News = () => {
 
         <p className="p1 previou-p">Previous News</p>
         <div className="previous-news-wrapper">
-          <div className="p1 scroll-btn">prev</div>
+          <div className="p1 scroll-btn">prev 
+          </div>
          
             {previousNews.map((news, ind) => (
-              <>
-                <div key={news.id} className="prev-div">
+              <> 
+                <div key={news.id} className="prev-div"> 
                   <img className="prev-news-image" src={news.url} />
                   <p className="p2">{news.month}</p>
                 </div>
