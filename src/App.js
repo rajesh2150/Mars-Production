@@ -8,12 +8,17 @@ import Project from './Components/Project/Project';
 import Partner from './Components/Partner/Partner';
 import HumanOnMars from './Components/HumanOnMars/HumanOnMars';
 import News from './Components/News/News';
+// import Img1 from "../assets/Home/Mask group.png";
+import Img1 from "./assests/Home/Mask group.png"
 import Technology from './Components/Technology/Technology';
 const App = () => {
   return (
     <div>
       <BrowserRouter>
       <Navbar/>
+      <div className="app-container">
+        <img src={Img1} alt="" />
+      
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/aboutus' element={<AboutUs/>}/>
@@ -23,7 +28,9 @@ const App = () => {
         <Route path='/news' element={<News/>}/>
         <Route path='/technology' element={<Technology/>}/>
       </Routes>
+      </div>
       </BrowserRouter>
+      
     </div>
   )
 }

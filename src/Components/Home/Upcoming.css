@@ -40,9 +40,9 @@
 .poster {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: fit;
   object-position: 30%;
-  border-radius: 40px;
+  border-radius: 30px;
 }
 
 .visit-now {
@@ -147,16 +147,19 @@ text-align: left;
 }
 @media(max-width:769px){
   .upcoming-wrapper {
-    padding: 2% 8%;
+    padding: 2% 2%;
     display: flex;
     flex-direction: column-reverse;
-    /* justify-content: space-between; */
-    /* align-items: flex-start; Changed for vertical alignment */
+    
   }
   .upcoming-image {
     height: 55vh;
     width: 45vw;
     position: relative;
+    padding: 2% 1.5%;
+  }
+  .streaming-p{
+    padding: 2% 4%;
   }
   .upcoming-hero{
     display: flex;
@@ -260,7 +263,7 @@ text-align: left;
 .visit-now {
   position: absolute;
   bottom: 10%;
-  left: 2%;
+  left: 7%;
   background-color: #ff7e35;
   padding: 5px 10px;
   border-radius: 20px;

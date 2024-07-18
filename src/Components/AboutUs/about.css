@@ -119,12 +119,12 @@ max-width: 75%;
 
 @media(max-width:769px){
   .about-us-wrapper{
-    padding-left: 15%;
+    padding-inline: 1rem;
   }
   .main-div {
-    margin-top: 5%;
-    height: 75vh;
-    width: 70vw;
+    margin-top: 10%;
+    height: 76vh;
+    width: 74vw;
     background-color: #343235;
     display: flex;
     flex-direction:column-reverse;
@@ -148,7 +148,7 @@ max-width: 75%;
   }  
   .aboutus-p2{
   font-family: Futura Bk BT;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 100%;
   text-align: left;
@@ -156,32 +156,35 @@ max-width: 75%;
   
   }
   .right-side img {
-    width: 25vw;
-    height: 18vh;
+    width: 48vw;
+    height: 17vh;
+    margin:2px;
     object-fit: cover;
   }
   .left-side {
     color: white;
-    padding: 5px;
+    padding: 26px;
+    
+    
   }
   
   .right-side p{
     font-family: 'Futura Hv BT';
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 13px;
+    line-height: 1rem;
     text-align: left;
     padding:1% 8% 2% 8% ;
     max-width: 90%;
     
   }
   .about-image{
-    height: 30vh;
-    width: 20vw;
+    height: 20vh;
+    width: 30vw;
     object-fit:fill ;
   }
   .about-image-2{
-  height: 25vh;
+  height: 20vh;
   width: 15vw;
   object-fit: contain;
   }
@@ -193,6 +196,6 @@ max-width: 75%;
     padding: 15% 3%;
   }
   .p-desc{
-    max-width: 80%;
+    max-width: 76%;
   }
 }

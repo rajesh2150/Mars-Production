@@ -65,6 +65,7 @@
   .how-we-work-wrapper {
     display: flex;
     flex-direction: column;
+    padding: 2% -4%;
   }
   .description {
     font-family: "Futura Hv BT";

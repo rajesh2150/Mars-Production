@@ -31,6 +31,7 @@
   margin-bottom: 30px;
   margin-left: 18%;
   cursor: pointer;
+  border: 2px solid grey;
 }
 .PartnerTestimonial-show {
   height: 65vh;
@@ -90,7 +91,7 @@
 @media (max-width: 768px) {
   .home-wrapper {
     flex-direction: column;
-    padding: 5% 3%;
+    padding: 5% 0%;
   }
   .home-globe {
     position: absolute;
@@ -101,7 +102,7 @@
     z-index: 200;
   }
   .PartnerTestimonial-main{
-    margin-left: 0%;
+    padding: 1% 0% 0% 0%;
   }
   .PartnerTestimonial-wrapper {
     display: flex;
@@ -111,12 +112,14 @@
   .PartnerTestimonial-text{
     font-size: 25px;
     margin-left: 2%;
+    margin-top: 4%;
   }
   .PartnerTestimonial-images {
     display: flex;
     flex-direction: row;
     gap: 15px;
     padding-bottom: 2%;
+    
   }
   .PartnerTestimonial-image {
     height: 58px;
@@ -129,13 +132,13 @@
     
   }
   .PartnerTestimonial-show {
-    height: 60%;
-    width: 90%;
+    height: 64vh;
+    width: 80vw;
     background-color: #343235;
     margin-left: 3%;
     border-radius: 20px;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
     /* justify-content: space-between; */
     justify-content: space-between;
     justify-items: center;
@@ -148,9 +151,11 @@
     top: 2%; */
     /* left: 10%; */
     height: 32vh;
-    width: 55vw;
-    /* margin: 7px 2px 4px 25px; */
+    width: 66vw;
+    margin: 20px 2px 0px 10px;
     border-radius: 20px;
+
+    
   }
   .fields{
     font-family: Futura Hv BT;

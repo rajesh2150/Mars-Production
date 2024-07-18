@@ -7,8 +7,8 @@ import Upcoming from "./Upcoming";
 import HowWeWork from "./HowWeWork";
 import Footer from "../common/Footer";
 const Home = () => {
-  const [rotation, setRotation] = useState([0, 0]); // Initial rotation (longitude, latitude)
-  const globeEl = useRef(null);
+const [rotation, setRotation] = useState([0, 0]); // Initial rotation (longitude, latitude)
+const globeEl = useRef(null);
 const globeImgUrl="https://www.solarsystemscope.com/textures/download/2k_mars.jpg";
 
   return (<>
