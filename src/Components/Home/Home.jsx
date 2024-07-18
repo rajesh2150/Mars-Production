@@ -13,9 +13,7 @@ const globeImgUrl="https://www.solarsystemscope.com/textures/download/2k_mars.jp
 
   return (<>
     <div className="home-wrapper">
-      <div className="home-globe">
-        <Globe ref={globeEl}  globeImageUrl={globeImgUrl} bumpImageUrl={globeImgUrl} backgroundImageUrl={globeImgUrl} height={300} width={300} />
-      </div>
+    
       <div className="carosual-div">
         <Carosual />
       </div>

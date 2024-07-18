@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./carosual.css";
-import globe from "../../../assests/pngwing 2.png"
+import globe from "../../../assests/pngwing 2.png";
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -13,7 +13,7 @@ const Carousel = () => {
     return () => clearInterval(interval);
   }, []);
 
-  return ( 
+  return (
     <div className="carousel-wrapper">
       <div className="globe">
         <img src={globe} alt="" />
@@ -26,7 +26,11 @@ const Carousel = () => {
       </div>
 
       {/* First div */}
-      <div className={`carousel-item ${currentIndex === 0 ? "fade-in" : "fade-out"}`}>
+      <div
+        className={`carousel-item ${
+          currentIndex === 0 ? "fade-in" : "fade-out"
+        }`}
+      >
         <div className="carousel-title-wrapper">
           <div className="carousel-details first">
             <div className="paragraphs">
@@ -50,7 +54,11 @@ const Carousel = () => {
       </div>
 
       {/* Second div */}
-      <div className={`carousel-item ${currentIndex === 1 ? "fade-in" : "fade-out"}`}>
+      <div
+        className={`carousel-item ${
+          currentIndex === 1 ? "fade-in" : "fade-out"
+        }`}
+      >
         <div className="carousel-title-wrapper">
           <div className="carousel-details carousel-second">
             <div>
@@ -78,7 +86,6 @@ const Carousel = () => {
         </div>
       </div>
     </div>
-    
   );
 };
 
