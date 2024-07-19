@@ -31,6 +31,7 @@ const AboutUs = () => {
           </div>
           <div className="right-side">
             <img
+           
             className="right-side-image"
               src="path_to_your_image.jpg"
               // height={200}
@@ -62,6 +63,7 @@ const AboutUs = () => {
               
             {/* <div> */}
               <img
+               alt="Mars Production"
                 className="about-image "
                 src="https://s3-alpha-sig.figma.com/img/04ca/e612/cc829f28cb4f3ea28af16dc99e58cabb?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OPpwqHfr99euHw~RKSn1BS3KEecTeW8b7KYL-dXhMkEsP89xzNcJFq-UAERltI6pKBfpTXeKDxOR613LWuBWBFPUy~Iw8hRGtru5cc9OQ6RFaNEhIqE9MfiSDPWGkQj6mnjv9-A4VYNbj0Fj2XQmcrY3qRyft3VliP-8DlTZlC-YmSxVz2YhyqX67u4CPomNJdc8UaCIfKelGBe2AHnAAc85ubK0GoVBgGe5iJux76QzMuT3YEFUTLTl5fe-TQfj4DHYWrQH~BhfpIBXqs7KQ1LRq5dAosBNoiXQD8-4UQ76eCf3rtAufcSnrqKutdpzp8ZOlIJhTm30YkazmNEkGw__"
                 />
@@ -81,6 +83,7 @@ const AboutUs = () => {
              
             <div>
               <img
+               alt="Mars Production"
                 className="about-image about-image-2"
                 src="https://s3-alpha-sig.figma.com/img/f8b5/5013/9648fd94bf0f85e797d684332d5b86e9?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BQG9klqtUmEMbgf4KXP6VrkJM73P0qPQl1KIQiu3xb6vX-rFurAeRx7D7rPTtSjN~YAssvbtQ2ad0CzYflUg6t218BRmHcWaT6Lv~vs6zRTpeLzaDgUnK5CqISOpzbzXvUE-0HSTZhHILaTwLQ-lb9IvXV7AcYMx1J7yF8KGY3Fi3fCWPycE6uN9R8XKwsmrhlMm5BjVKDErfM5hAIaLSJqSL1rGzqi06L-EtsnpmeMbHCVU-03s2XXZQJRQTxN1dObR8nPF4B1Y0n67anCHZMOpJxJP9uXGHkZZeiI2h2x80-qXodr1waj8w3M0-xcR0mT~t50e8~1NYcBn7ZNHTg__"
                 />

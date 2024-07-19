@@ -16,7 +16,7 @@ const Carousel = () => {
   return (
     <div className="carousel-wrapper">
       <div className="globe">
-        <img src={globe} alt="" />
+        <img src={globe}  alt="Mars Production"/>
       </div>
       <div>
         <img

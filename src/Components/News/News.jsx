@@ -163,7 +163,7 @@ const News = () => {
             {previousNews.map((news, ind) => (
               <> 
                 <div key={news.id} className="prev-div"> 
-                  <img className="prev-news-image" src={news.url} />
+                  <img className="prev-news-image" src={news.url} alt="News"/>
                   <p className="p2">{news.month}</p>
                 </div>
               </>
