@@ -14,11 +14,11 @@ const Footer = () => {
       <div className='empty-div'></div>
       <div>
        {/* <img src={icons[0]} height={162} width={162}/> */}
-       <img className='icon' src={icons[1]} />
-       <img className='icon'src={icons[2]} />
-       <img className='icon' src={icons[3]} />
-       <img className='icon' src={icons[4]} />
-       <img className='icon' src={icons[5]} />
+       <img className='icon' src={icons[1]}  alt="Mars Production"/>
+       <img className='icon'src={icons[2]}   alt="Mars Production"/>
+       <img className='icon' src={icons[3]}  alt="Mars Production" />
+       <img className='icon' src={icons[4]}  alt="Mars Production" />
+       <img className='icon' src={icons[5]}  alt="Mars Production" />
         
       </div>
     </div>

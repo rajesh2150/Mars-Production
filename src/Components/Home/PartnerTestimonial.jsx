@@ -48,6 +48,7 @@ const PartnerTestimonial = () => {
                 onClick={() => handleClick(ind)}
                 className={`   PartnerTestimonial-image ${img ? "show" : ""}`}
                 src={photo.img}
+                 alt={photo.name}
               />
             </div>
           ))}
@@ -62,6 +63,7 @@ const PartnerTestimonial = () => {
             <img
               className="selected-image"
               src={`${img ? photos[img].img : photos[0].img}`}
+              alt={photos[img].name}
             />
           {/* </div> */}
         </div>
