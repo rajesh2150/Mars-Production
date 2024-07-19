@@ -7,7 +7,7 @@ body {
 .app-container {
   width: 100%;
   min-height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
 }
 

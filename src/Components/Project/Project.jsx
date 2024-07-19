@@ -42,7 +42,7 @@ const Project = () => {
         </p>
         <div className=" ">
           <div className="project-ongoing ongoing-main">
-            <div className="">
+            <div className="moun">
               <p className="p1 ongoing-p1-title" style={{ color: "white" }}>
                 Mounam by Taanvi Talkies
               </p>

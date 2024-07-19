@@ -118,7 +118,12 @@ border-radius: 50px;
 }
 
 
+
 @media(max-width:769px){
+  .project-wrapper{
+    margin: 0% -8% ;
+    
+  }
  
   .project {
     margin-bottom:7%;
@@ -126,7 +131,9 @@ border-radius: 50px;
     justify-content: space-around;
     height: 55vh;
     width: 75vw;
-    padding: 2% 5%;
+    padding: 2% 7%;
+    max-width: 100%;
+  
   }
   
   .project-desc {
@@ -156,13 +163,17 @@ border-radius: 50px;
     /* object-fit: contain; */
   }
   
+  .project-ongoing{
+    padding: 5% 7%;
+    margin: 7% 0%;
+  }
   .ongoing-main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 8%;
-    padding-left: 5%;
+    padding-left: 8% 10%;
     height: 55vh;
     width: 70vw;
     border-radius: 15px;

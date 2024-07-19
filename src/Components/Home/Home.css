@@ -110,7 +110,7 @@ justify-content: center;
   .PartnerTestimonial-wrapper {
     display: flex;
     flex-direction: column;
-    padding: 0%;
+    padding: 0% 50% 0% 1%;
   }
   .PartnerTestimonial-text{
     font-size: 25px;
@@ -153,8 +153,8 @@ justify-content: center;
     /* position: absolute;
     top: 2%; */
     /* left: 10%; */
-    height: 32vh;
-    width: 66vw;
+    height: 28vh;
+    width: 60vw;
     margin: 20px 2px 0px 10px;
     border-radius: 20px;
 
@@ -192,6 +192,9 @@ justify-content: center;
     line-height: 90%;
     text-align: left;
     color: white;
+  }
+  .desc:nth-child(1){
+    line-height: 20px;
   }
 }
 @media (min-width: 769px) and (max-width: 820px) {

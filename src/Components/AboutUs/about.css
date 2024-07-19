@@ -120,6 +120,7 @@ max-width: 75%;
 @media(max-width:769px){
   .about-us-wrapper{
     padding-inline: 1rem;
+    padding: 2% 6%;
   }
   .main-div {
     margin-top: 10%;
