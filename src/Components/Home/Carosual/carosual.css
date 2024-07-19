@@ -138,18 +138,40 @@
 
 @media(max-width:768px){
 .carousel-wrapper{
-  height: 50vh;
+  height: 45vh;
   width: 90vw;
-  padding: 0px;
+  background-color: #44444450;
+  /* padding: 0px; */
   margin: 3%;
 }
 .carousel-title-wrapper{
   display: flex;
   /* flex-direction: column; */
 }
-.globe{
-  display:none;
+.carosual-top {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 6%;
+  width: 30%;
+  overflow: hidden;
+  position: relative;
+  margin-top: -92%; 
 }
+
+.globe{
+  display:inline;
+  margin-left: 20px;
+  
+}
+.globe img {
+  height: 35vh;
+  width:80vw;
+  z-index: 200;
+  object-fit: cover; 
+  border-radius: 50%; 
+}
+
 .carousel-heading{
   font-size: 20px;
   font-family: Heavitas;
@@ -194,6 +216,8 @@
 
 @media(min-width:769px) and (max-width:820px){
   .carousel-wrapper{
+    display: flex;
+    flex-direction: column;
     height: 40vh;
     width: 90vw;
     padding: 0px;
@@ -202,6 +226,18 @@
   .carousel-title-wrapper{
     display: flex;
     /* flex-direction: column; */
+  }
+  .globe{
+    display:inline;
+    margin-left: 20px;
+    
+  }
+  .globe img {
+    height: 45vh;
+    width:80vw;
+    z-index: 200;
+    object-fit: cover; 
+    border-radius: 50%; 
   }
   
  
