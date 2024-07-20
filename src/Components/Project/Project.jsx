@@ -32,7 +32,7 @@ const Project = () => {
           {/* </div> */}
         </div>
         <p className="p1">Latest Movie Teaser</p>
-        <div className="main-div">
+        <div className="ongoing-main-div ">
           <img
           alt="Project Video"
             className="project-video"
