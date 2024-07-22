@@ -50,7 +50,7 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="second-main-div ">
-          <div className="about-leftside second">
+          <div className="about-leftside second-main-div">
             <div className="about-leftside-1">
               <div>
               <p className="p1">Our Vision</p>
@@ -61,7 +61,7 @@ const AboutUs = () => {
 
               </div>
               
-            {/* <div> */}
+             {/* <div> */}
               <img
                alt="Mars Production"
                 className="about-image "

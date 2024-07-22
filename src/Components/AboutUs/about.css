@@ -119,7 +119,7 @@ max-width: 75%;
 
 @media(max-width:769px){
   .about-us-wrapper{
-    padding-inline: 1rem;
+    /* padding-inline: 1rem; */
   }
   .main-div {
     margin-top: 10%;
@@ -198,4 +198,101 @@ max-width: 75%;
   .p-desc{
     max-width: 76%;
   }
+}
+
+
+@media(min-width:769px) and (max-width:1024px){
+  .main-div {
+    margin-top: 10%;
+    height: 76vh;
+    width: 74vw;
+    background-color: #343235;
+    display: flex;
+    flex-direction:column-reverse;
+    align-items: center;
+    padding: 2%;
+    border-radius: 2%;
+  }
+
+  .about-us-main{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+  .aboutus-p1{
+  font-family: 'Futura Hv BT';
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 85%;
+  text-align: left;
+  color: #FF7E35;
+  margin-bottom: 2%;
+  
+  }  
+  .aboutus-p2{
+  font-family: Futura Bk BT;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 100%;
+  text-align: left;
+  color: white;
+  
+  }
+  .right-side img {
+    width: 48vw;
+    height: 17vh;
+    margin:2px;
+    object-fit: cover;
+  }
+  .left-side {
+    color: white;
+    padding: 26px;
+    
+    
+  }
+  
+  .right-side p{
+    font-family: 'Futura Hv BT';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1rem;
+    text-align: left;
+    padding:1% 8% 2% 8% ;
+    max-width: 90%;
+    
+  }
+  .about-image{
+    height: 20vh;
+    width: 30vw;
+    object-fit:fill ;
+  }
+  .about-image-2{
+  height: 20vh;
+  width: 15vw;
+  object-fit: contain;
+  }
+  .about-leftside{
+    display: flex;
+    justify-content: center;
+    flex-direction:column ;
+    gap: 4%;
+    padding: 15% 3%;
+  }
+  .p-desc{
+    max-width: 76%;
+  }
+  .second-main-div{
+    margin-top: 20%;
+    height: 60vh;
+    width: 74vw;
+    background-color: #343235;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    border-radius: 2%;
+  
+  }
+
 }
