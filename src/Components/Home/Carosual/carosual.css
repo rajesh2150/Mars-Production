@@ -114,6 +114,7 @@
   overflow: hidden;
   position: relative;
   margin-top: -470px; 
+  margin-bottom: 2%;
 }
 
 
@@ -143,6 +144,7 @@
   background-color: #44444450;
   /* padding: 0px; */
   margin: 3%;
+  position: relative;
 }
 .carousel-title-wrapper{
   display: flex;
@@ -155,8 +157,9 @@
   height: 6%;
   width: 30%;
   overflow: hidden;
-  position: relative;
-  margin-top: -92%; 
+  position: absolute;
+  top: 3%;
+  left: 3%;
 }
 
 .globe{
@@ -214,7 +217,7 @@
 }
 }
 
-@media(min-width:769px) and (max-width:820px){
+@media(min-width:769px) and (max-width:1024px){
   .carousel-wrapper{
     display: flex;
     flex-direction: column;
@@ -222,6 +225,7 @@
     width: 90vw;
     padding: 0px;
     margin: 3%;
+    background-color: #44444450;
   }
   .carousel-title-wrapper{
     display: flex;
@@ -229,12 +233,12 @@
   }
   .globe{
     display:inline;
-    margin-left: 20px;
+    margin-left: 50px auto;
     
   }
   .globe img {
-    height: 45vh;
-    width:80vw;
+    /* height: 55vh; */
+    /* width:80vw; */
     z-index: 200;
     object-fit: cover; 
     border-radius: 50%; 
@@ -254,13 +258,14 @@
  
 .carousel-heading {
   font-family: Heavitas;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 400;
   line-height: 38.74px;
   text-align: left;
   color: #ffffff;
   text-transform: uppercase;
   margin-bottom: 2%;
+  margin-top: 2%;
 }
 
 .carousel-paragraph {

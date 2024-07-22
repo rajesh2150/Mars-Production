@@ -77,3 +77,18 @@
     max-width: 100%;
   }
 }
+
+@media(min-width:769px) and (max-width:1024px){
+  .how-we-work{
+    padding: 1% 8% 8% 8%;
+  }
+  .description {
+    font-family: "Futura Hv BT";
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 24.37px;
+    text-align: left;
+
+    max-width: 100%;
+  }
+}
