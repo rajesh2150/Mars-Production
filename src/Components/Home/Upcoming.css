@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: flex-start; /* Changed for vertical alignment */
 }
-.upcoming-hero{
+.upcoming-hero {
   display: flex;
   justify-content: space-between;
 }
@@ -20,22 +20,21 @@
   padding-left: 70px;
 }
 
-
 .upcoming-image {
   height: 75vh;
   width: 45vw;
   position: relative;
 }
-.streaming-p{
+.streaming-p {
   font-family: Heavitas;
   font-size: 40px;
   font-weight: 400;
   line-height: 40.61px;
   text-align: left;
   color: white;
- position: absolute;
- bottom: 25%;
- left: 3%;
+  position: absolute;
+  bottom: 25%;
+  left: 3%;
 }
 .poster {
   height: 100%;
@@ -52,11 +51,10 @@
   background-color: #ff7e35;
   padding: 10px 20px;
   border-radius: 20px;
-  
 }
 
 .visit-now a {
-  color: #282727  ;
+  color: #282727;
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
@@ -106,12 +104,12 @@
   /* padding: 10px; */
   border-radius: 1%;
 }
-.blog-bg{
-   background-color: rgba(255, 255, 255, 0.1);
-   margin-bottom: 2%;
-   padding: 1%;
-   height: 4.7%;
-   width: 85%;
+.blog-bg {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 2%;
+  padding: 1%;
+  height: 4.7%;
+  width: 85%;
 }
 
 .blog-image {
@@ -122,11 +120,11 @@
 }
 
 .blog-title {
-  font-family: 'Futura Hv BT';
-font-size: 22px;
-font-weight: 400;
-line-height: 22.34px;
-text-align: left;
+  font-family: "Futura Hv BT";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22.34px;
+  text-align: left;
 
   text-align: start;
   font-size: 18px;
@@ -146,12 +144,12 @@ text-align: left;
   font-size: 18px;
   line-height: 1.4;
 }
-@media(max-width:769px){
+
+@media (max-width: 769px) {
   .upcoming-wrapper {
     padding: 2% 2%;
     display: flex;
     flex-direction: column-reverse;
-    
   }
   .upcoming-image {
     height: 55vh;
@@ -159,15 +157,16 @@ text-align: left;
     position: relative;
     padding: 2% 1.5%;
   }
-  .streaming-p{
+  .streaming-p {
     padding: 2% 4%;
+    bottom: 25%;
   }
-  .upcoming-hero{
+  .upcoming-hero {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  .upcoming-title{
+  .upcoming-title {
     font-family: Heavitas;
     font-size: 30px;
     font-weight: 400;
@@ -178,105 +177,135 @@ text-align: left;
     padding-left: 7%;
     padding-top: 15px;
   }
-  .upcoming-title{
+  .upcoming-title {
     display: flex;
     flex-direction: column;
   }
-  .options{
+  .options {
     padding-left: 6%;
-
   }
-  .blog-list{
+  .blog-list {
     width: 97.5vw;
     margin: 8px 10px 10px -28px;
   }
   .blog-item {
     display: flex;
     justify-content: space-between;
-
-    /* align-items: center; */
-    /* background-color: rgba(255, 255, 255, 0.1); */
-    /* margin-bottom: 10px; */
-    /* padding: 5px 30px 0px 5px; */
     width: 53vw;
     border-radius: 1%;
   }
-  .blog-bg{
+  .blog-bg {
     background-color: rgba(255, 255, 255, 0.1);
     margin-bottom: 2%;
-    /* padding: 1% 5% 0% 1%; */
     height: 10vh;
     width: 90%;
- }
- .latest-item {
-  background-color: rgba(255, 255, 255, 0.1);
-  margin-bottom: 5%;
-  /* border-radius: 20px; */
-  font-size: 18px;
-  margin-right: 20px;
- 
-}
-.blog-image {
-  width: 20vw;
-  height: 100%;
-  margin-right: 1%;
-  border-radius: 5%;
-}
-.blog-title {
-  font-family: 'Futura Hv BT';
-  font-size: 22px;
-  font-weight: 400;
-  text-align: start;
-  padding-left: 5px;
-  line-height: 22.34px;
-  margin-top: 5px;
-  margin-left: 0; 
-  position: relative;
-  left: 0;
+  }
+  .latest-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 5%;
+    font-size: 18px;
+    margin-right: 20px;
+  }
+  .blog-image {
+    width: 20vw;
+    height: 100%;
+    margin-right: 1%;
+    border-radius: 5%;
+  }
+  .blog-title {
+    font-family: "Futura Hv BT";
+    font-size: 22px;
+    font-weight: 400;
+    text-align: start;
+    padding-left: 5px;
+    line-height: 22.34px;
+    margin-top: 5px;
+    margin-left: 0;
+    position: relative;
+    left: 0;
+  }
+
+  .upcoming-details {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 90vw;
+    margin-left: 5%;
+  }
+  .poster {
+    height: 50vh;
+    width: 90vw;
+    object-fit: fill;
+    border-radius: 10px;
+  }
+  .streaming-p {
+    font-family: "Heavitas";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 21.61px;
+    text-align: left;
+    color: white;
+    position: absolute;
+    bottom: 25%;
+    left: 3%;
+  }
+  .visit-now {
+    position: absolute;
+    bottom: 10%;
+    left: 7%;
+    background-color: #ff7e35;
+    padding: 5px 10px;
+    border-radius: 20px;
+  }
+
+  .visit-now a {
+    color: #282727;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+  }
 }
 
-.upcoming-details {
-  display: flex;
-  flex-direction: column;
-  color: white;
-  width: 90vw;
-  margin-left: 5%;
-  
-}
-.poster {
-  height: 50vh;
-  width: 90vw;
-  object-fit: fill;
-  /* object-position: 30%; */
-  border-radius: 10px;
-}
-.streaming-p{
-  font-family: 'Heavitas';
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 21.61px;
-  text-align: left;
-  color: white;
- position: absolute;
- bottom: 25%;
- left: 3%;
-}
-.visit-now {
-  position: absolute;
-  bottom: 10%;
-  left: 7%;
-  background-color: #ff7e35;
-  padding: 5px 10px;
-  border-radius: 20px;
-}
+@media (min-width: 770px) and (max-width: 1024px) {
+  .upcoming-image {
+    height: 40vh;
+    width: 45vw;
+    position: relative;
+  }
+  .upcoming-hero {
+    margin-top: 5%;
+  }
+  .streaming-p {
+    font-family: Heavitas;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 40.61px;
+    text-align: left;
+    color: white;
+    position: absolute;
+    bottom: 60%;
+    left: 3%;
+  }
+  .poster {
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+    border-radius: 30px;
+  }
+  .visit-now {
+    position: absolute;
+    bottom: 55%;
+    left: 7%;
+    background-color: #ff7e35;
+    padding: 5px 10px;
+    border-radius: 20px;
+  }
 
-.visit-now a {
-  color: #282727  ;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-
-
+  .visit-now a {
+    color: #282727;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+  }
 }
