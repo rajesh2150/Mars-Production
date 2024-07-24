@@ -170,3 +170,31 @@ color: white;
   cursor: pointer;
 }
 }
+
+@media(min-width:769px) and (max-width:1024px){
+.p1{
+  font-size: 1.4rem;
+}
+  .team-members {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 30px;
+
+   
+  }
+  .team-mem-pic {
+    height: 30vh;
+    width: 30vw;
+    object-fit: cover;
+    border-radius: 3%;
+  }
+
+  .carrer-form{
+
+    background-color: #343235;
+    width: 65%;
+    text-align: center;
+    border-radius: 3%;
+    position: relative;
+}
+}
