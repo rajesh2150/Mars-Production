@@ -131,3 +131,13 @@ body {
 * {
   box-sizing: border-box;
 }
+
+@media(min-width:769px) and (max-width:1024px){
+  
+.news-poster {
+  height: 35vh;
+  width: 35vw;
+  object-fit: fill;
+  border-radius: 0px;
+}
+}
