@@ -3,8 +3,8 @@
   justify-content: space-between;
   background-color: #343235cc;
   padding-right: 5%;
-  margin-top: 5%;
-  position: absolute;
+  margin-top: 6%;
+  position: sticky;
   bottom: 1px;
   right: 0px;
   width: 100%;

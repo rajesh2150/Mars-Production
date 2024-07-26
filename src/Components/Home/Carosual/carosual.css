@@ -36,11 +36,25 @@
 }
 
 
+@keyframes rotateMars {
+  from {
+    transform: rotate(0deg);
+    height: 100vh;
+    width: 100vw;
+  }
+  to {
+    transform: rotate(360deg);
+    height: 100vh;
+    width: 100vw;
+  }
+}
 .globe img {
   height: 100%;
   width: 100%;
   object-fit: cover; 
   border-radius: 50%; 
+  animation: rotateMars 30s linear infinite;
+
 }
 
 
