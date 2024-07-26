@@ -1,16 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import "./about.css";
 import Footer from "../common/Footer";
 import "../common/footer.css";
+
 const AboutUs = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const projectWrapper = document.querySelector(".about-us-wrapper");
+    if (projectWrapper) {
+      projectWrapper.classList.remove("loaded");
+      const timeoutId = setTimeout(() => {
+        projectWrapper.classList.add("loaded");
+      }, 50);
+      return () => clearTimeout(timeoutId);
+    }
+  }, [location]);
+
   return (
     <>
       <div className="about-us-wrapper">
         <div className="main-div about-us-main">
           <div className="left-side">
             <div className="leftside-one">
-              <p className=" aboutus-p1">Mars Productions Private Limited</p>
-              <p className=" aboutus-p2">
+              <p className="aboutus-p1">Mars Productions Private Limited</p>
+              <p className="aboutus-p2">
                 Mars Productions Private Limited is a Film & Technology
                 Production company located at Sri Kalahasthi, Andhra Pradesh,
                 India. Mars Productions Private Limited is registered with the
@@ -21,8 +36,8 @@ const AboutUs = () => {
               </p>
             </div>
             <div className="leftside-two">
-              <p className=" aboutus-p1">Founders Note</p>
-              <p className=" aboutus-p2">
+              <p className="aboutus-p1">Founders Note</p>
+              <p className="aboutus-p2">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
@@ -31,16 +46,8 @@ const AboutUs = () => {
           </div>
           <div className="right-side">
             <img
-           
-            className="right-side-image"
+              className="right-side-image"
               src="path_to_your_image.jpg"
-              // height={200}
-              // width={180}
-              // style={{
-              //   backgroundColor: "lightgray",
-              //   borderRadius: "15px",
-              //   marginBottom: "2%",
-              // }}
               alt="Company Logo"
             />
             <p>
@@ -49,47 +56,37 @@ const AboutUs = () => {
             </p>
           </div>
         </div>
-        <div className="second-main-div ">
+        <div className="second-main-div">
           <div className="about-leftside second-main-div">
             <div className="about-leftside-1">
               <div>
-              <p className="p1">Our Vision</p>
-              <p className="p2 p-desc">
-                To create an eco system of creators and consumers with equality
-                and efficiency at its center.
-              </p>
-
+                <p className="p1">Our Vision</p>
+                <p className="p2 p-desc">
+                  To create an eco system of creators and consumers with
+                  equality and efficiency at its center.
+                </p>
               </div>
-              
-             {/* <div> */}
               <img
-               alt="Mars Production"
-                className="about-image "
+                alt="Mars Production"
+                className="about-image"
                 src="https://s3-alpha-sig.figma.com/img/04ca/e612/cc829f28cb4f3ea28af16dc99e58cabb?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OPpwqHfr99euHw~RKSn1BS3KEecTeW8b7KYL-dXhMkEsP89xzNcJFq-UAERltI6pKBfpTXeKDxOR613LWuBWBFPUy~Iw8hRGtru5cc9OQ6RFaNEhIqE9MfiSDPWGkQj6mnjv9-A4VYNbj0Fj2XQmcrY3qRyft3VliP-8DlTZlC-YmSxVz2YhyqX67u4CPomNJdc8UaCIfKelGBe2AHnAAc85ubK0GoVBgGe5iJux76QzMuT3YEFUTLTl5fe-TQfj4DHYWrQH~BhfpIBXqs7KQ1LRq5dAosBNoiXQD8-4UQ76eCf3rtAufcSnrqKutdpzp8ZOlIJhTm30YkazmNEkGw__"
-                />
-                {/* </div> */}
+              />
             </div>
-
             <div className="about-leftside-1">
               <div>
-              <p className="p1">Our Mission</p>
-              <p className="p2 p-desc">
-                To give voice to every individual with a story worth telling the
-                world by innovating in their respective craft.
-              </p>
-
+                <p className="p1">Our Mission</p>
+                <p className="p2 p-desc">
+                  To give voice to every individual with a story worth telling
+                  the world by innovating in their respective craft.
+                </p>
               </div>
-        
-             
-            <div>
               <img
-               alt="Mars Production"
+                alt="Mars Production"
                 className="about-image about-image-2"
                 src="https://s3-alpha-sig.figma.com/img/f8b5/5013/9648fd94bf0f85e797d684332d5b86e9?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BQG9klqtUmEMbgf4KXP6VrkJM73P0qPQl1KIQiu3xb6vX-rFurAeRx7D7rPTtSjN~YAssvbtQ2ad0CzYflUg6t218BRmHcWaT6Lv~vs6zRTpeLzaDgUnK5CqISOpzbzXvUE-0HSTZhHILaTwLQ-lb9IvXV7AcYMx1J7yF8KGY3Fi3fCWPycE6uN9R8XKwsmrhlMm5BjVKDErfM5hAIaLSJqSL1rGzqi06L-EtsnpmeMbHCVU-03s2XXZQJRQTxN1dObR8nPF4B1Y0n67anCHZMOpJxJP9uXGHkZZeiI2h2x80-qXodr1waj8w3M0-xcR0mT~t50e8~1NYcBn7ZNHTg__"
-                />
+              />
             </div>
           </div>
-                </div>
         </div>
       </div>
       <Footer />
