@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 .app-container {
@@ -18,23 +18,28 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-background-size: cover;
-object-fit: fill;
-transform: scaleY(-1);
-transition: all 0.2s;
-  animation: rotateBackground 80s linear infinite; 
+  background-size: cover;
+  object-fit: fill;
+  transform: scaleY(-1);
+  transition: all 2s;
+  
+  animation: rotateBackground 30s linear infinite;
+ 
 }
 
 @keyframes rotateBackground {
   from {
     transform: rotate(0deg);
     height: 100vh;
-    width: 100vw;
+    transition: all 2s;
+    
+   object-position: center;
   }
   to {
-    transform: rotate(30deg);
-    height: 100vh;
-    width: 100vw;
+    transform: rotate(15deg);
+   object-position: center;
+   height: 100vh;
+   transition: all 2s;
   }
 }
 
@@ -42,6 +47,6 @@ transition: all 0.2s;
   body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; 
+    overflow-x: hidden;
   }
 }

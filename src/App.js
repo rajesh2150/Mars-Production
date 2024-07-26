@@ -17,7 +17,7 @@ const App = () => {
       <BrowserRouter>
       <Navbar/>
       <div className="app-container">
-        <img src={Img1} alt="" />
+        <img className='.img' src={Img1} alt="" />
       
       <Routes>
         <Route path='/' element={<Home/>}/>
