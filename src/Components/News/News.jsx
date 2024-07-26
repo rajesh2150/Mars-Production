@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Footer from "../common/Footer";
 import "./News.css";
+import { useLocation } from "react-router-dom";
 const News = () => {
   const [activeTab, setActiveTab] = useState("latest");
+
   // const [activeTab, setActiveTab] = useState("latest");
   const previousNews = [
     {
@@ -31,6 +33,19 @@ const News = () => {
       url: "",
     },
   ];
+
+  const location = useLocation();
+
+  useEffect(() => {
+    const projectWrapper = document.querySelector('.news-hero-wrapper');
+    if (projectWrapper) {
+      projectWrapper.classList.remove('loaded');
+      const timeoutId = setTimeout(() => {
+        projectWrapper.classList.add('loaded');
+      }, 50);
+      return () => clearTimeout(timeoutId); // Cleanup on unmount or before re-run
+    }
+  }, [location]);
   return (
     <>
       <div className="project-wrapper news-hero-wrapper ">
