@@ -1,8 +1,21 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./partner.css";
 import Footer from "../common/Footer";
+import { useLocation } from "react-router-dom";
 
 const Partner = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const projectWrapper = document.querySelector('.project-wrapper');
+    if (projectWrapper) {
+      projectWrapper.classList.remove('loaded');
+      const timeoutId = setTimeout(() => {
+        projectWrapper.classList.add('loaded');
+      }, 50);
+      return () => clearTimeout(timeoutId); // Cleanup on unmount or before re-run
+    }
+  }, [location]);
   return (
     <>
       <div className="project-wrapper">
