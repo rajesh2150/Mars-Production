@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Footer from "../common/Footer";
 import "./technology.css";
 
 const Technology = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const projectWrapper = document.querySelector('.project-wrapper');
+    if (projectWrapper) {
+      projectWrapper.classList.remove('loaded');
+      const timeoutId = setTimeout(() => {
+        projectWrapper.classList.add('loaded');
+      }, 50);
+      return () => clearTimeout(timeoutId); // Cleanup on unmount or before re-run
+    }
+  }, [location]);
+
   return (
     <>
-      <div className="project-wrapper">
+      <div className="project-wrapper technology-wrapper">
         <div className="main-div-tech tech-main">
           <div className="sub-div">
             <div className="text-content">
