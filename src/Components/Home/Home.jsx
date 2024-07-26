@@ -1,4 +1,4 @@
-import React, { useState,useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Carosual from "./Carosual/Carosual";
 import Globe from "react-globe.gl";
 import "./Home.css";
@@ -6,24 +6,32 @@ import PartnerTestimonial from "./PartnerTestimonial";
 import Upcoming from "./Upcoming";
 import HowWeWork from "./HowWeWork";
 import Footer from "../common/Footer";
+
 const Home = () => {
-const [rotation, setRotation] = useState([0, 0]); // Initial rotation (longitude, latitude)
-const globeEl = useRef(null);
-const globeImgUrl="https://www.solarsystemscope.com/textures/download/2k_mars.jpg";
+  const [loaded, setLoaded] = useState(false);
+  const globeEl = useRef(null);
+  const globeImgUrl = "https://www.solarsystemscope.com/textures/download/2k_mars.jpg";
 
-  return (<>
-    <div className="home-wrapper">
-    
-      <div className="carosual-div">
-        <Carosual />
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setLoaded(true);
+    }, 50); // Adjust this timeout if needed
+
+    return () => clearTimeout(timeoutId); // Cleanup on unmount or before re-run
+  }, []);
+
+  return (
+    <>
+      <div className={`home-wrapper ${loaded ? 'loaded' : ''}`}>
+        <div className="carosual-div">
+          <Carosual />
+        </div>
       </div>
-    </div>
-      <PartnerTestimonial/>
-      <Upcoming/>
-      <HowWeWork/>
-      <Footer/>
-  </>
-
+      <PartnerTestimonial />
+      <Upcoming />
+      <HowWeWork />
+      <Footer />
+    </>
   );
 };
 

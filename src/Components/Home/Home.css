@@ -1,9 +1,15 @@
 .home-wrapper {
   display: flex;
-display: flex;
-align-items: center;
-justify-content: center;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
+
+.home-wrapper.loaded {
+  opacity: 1;
+}
+
 .home-globe {
   z-index: 1;
 }
@@ -13,7 +19,6 @@ justify-content: center;
   flex-direction: row;
   margin-top: 2%;
   padding-left: 5%;
-  /* padding: 50px; */
 }
 
 .PartnerTestimonial-text {
@@ -26,6 +31,7 @@ justify-content: center;
   color: #ff7e35;
   margin-bottom: 4%;
 }
+
 .PartnerTestimonial-image {
   height: 98px;
   width: 98px;
@@ -36,6 +42,7 @@ justify-content: center;
   cursor: pointer;
   border: 2px solid grey;
 }
+
 .PartnerTestimonial-show {
   height: 65vh;
   width: 60vw;
@@ -47,25 +54,31 @@ justify-content: center;
   align-items: center;
   padding: 3%;
 }
+
 .PartnerTestimonial-main {
   padding: 3%;
   margin-top: 8%;
   margin-left: 5%;
 }
+
 .selected-image {
   height: 347px;
   width: 280px;
   border-radius: 15px;
 }
+
 .show:active {
   border: 3px solid #ff7e35;
 }
+
 .fields {
   padding: 3%;
 }
+
 .fields p {
   margin: 1.5% 0px 1% 0px;
 }
+
 .name {
   font-family: Futura Hv BT;
   font-size: 48px;
@@ -74,6 +87,7 @@ justify-content: center;
   text-align: left;
   color: #ffffff;
 }
+
 .field {
   font-family: Futura Hv BT;
   font-size: 20px;
@@ -82,6 +96,7 @@ justify-content: center;
   text-align: left;
   color: white;
 }
+
 .desc {
   font-family: Futura Hv BT;
   font-size: 25px;
@@ -104,7 +119,7 @@ justify-content: center;
   .carosual-div {
     z-index: 200;
   }
-  .PartnerTestimonial-main{
+  .PartnerTestimonial-main {
     padding: 1% 0% 0% 0%;
   }
   .PartnerTestimonial-wrapper {
@@ -112,7 +127,7 @@ justify-content: center;
     flex-direction: column;
     padding: 0%;
   }
-  .PartnerTestimonial-text{
+  .PartnerTestimonial-text {
     font-size: 25px;
     margin-left: 2%;
     margin-top: 4%;
@@ -122,7 +137,6 @@ justify-content: center;
     flex-direction: row;
     gap: 15px;
     padding-bottom: 2%;
-    
   }
   .PartnerTestimonial-image {
     height: 58px;
@@ -132,42 +146,33 @@ justify-content: center;
     margin-bottom: 5%;
     margin-left: 30%;
     cursor: pointer;
-    
   }
   .PartnerTestimonial-show {
-    height: 60%; /* prev 67vh*/
+    height: 60%;
     width: 80vw;
     background-color: #343235;
     margin-left: 3%;
     border-radius: 20px;
     display: flex;
     flex-direction: column-reverse;
-    /* justify-content: space-between; */
-    justify-content: space-evenly; /* first space btw*/
+    justify-content: space-evenly;
     justify-items: center;
     align-items: center;
-    /* padding: 3%; */
     position: relative;
   }
   .selected-image {
-    /* position: absolute;
-    top: 2%; */
-    /* left: 10%; */
     height: 25vh;
-    width: 65vw; /*prev 32vh*/
+    width: 65vw;
     margin: 20px 2px 0px 10px;
     border-radius: 20px;
-
-    
   }
-  .fields{
+  .fields {
     font-family: Futura Hv BT;
     font-size: 20px;
     font-weight: 400;
     line-height: 22.31px;
     text-align: left;
     color: white;
-    
   }
   .name {
     font-family: Futura Hv BT;
@@ -189,11 +194,11 @@ justify-content: center;
     font-family: Futura Hv BT;
     font-size: 15px;
     font-weight: 400;
-    line-height: 90%;
     text-align: left;
     color: white;
   }
 }
+
 @media (min-width: 769px) and (max-width: 1024px) {
   .home-wrapper {
     flex-direction: column;
@@ -208,39 +213,29 @@ justify-content: center;
     z-index: 200;
   }
   .PartnerTestimonial-show {
-    height: 60%; /* prev 67vh*/
+    height: 60%;
     width: 80vw;
     background-color: #343235;
-    /* margin-left: 3%; */
     border-radius: 20px;
     display: flex;
     flex-direction: column-reverse;
-    /* justify-content: space-between; */
-    justify-content: space-evenly; /* first space btw*/
+    justify-content: space-evenly;
     justify-items: center;
     align-items: center;
-    /* padding: 3%; */
     position: relative;
   }
   .selected-image {
-    /* position: absolute;
-    top: 2%; */
-    /* left: 10%; */
     height: 15vh;
-    /* width: 65vw; prev 32vh */
     margin: 20px 2px 0px 10px;
     border-radius: 20px;
-
-    
   }
-  .fields{
+  .fields {
     font-family: Futura Hv BT;
     font-size: 20px;
     font-weight: 400;
     line-height: 22.31px;
     text-align: left;
     color: white;
-    
   }
   .name {
     font-family: Futura Hv BT;
@@ -262,7 +257,6 @@ justify-content: center;
     font-family: Futura Hv BT;
     font-size: 15px;
     font-weight: 400;
-    /* line-height: 90%; */
     text-align: left;
     color: white;
   }
