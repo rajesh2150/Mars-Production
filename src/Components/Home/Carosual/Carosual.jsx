@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./carosual.css";
 import globe from "../../../assests/pngwing 2.png";
+import Globe from "react-globe.gl";
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -16,7 +17,8 @@ const Carousel = () => {
   return (
     <div className="carousel-wrapper">
       <div className="globe">
-        <img src={globe}  alt="Mars Production"/>
+        {/* <Globe/> */}
+        <img src={globe} className=".img-mars" alt="Mars Production"/>
       </div>
       <div>
         <img

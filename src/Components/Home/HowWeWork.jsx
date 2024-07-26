@@ -2,6 +2,7 @@ import React from 'react';
 import './HowWeWork.css';
 
 const HowWeWork = () => {
+   
   return (
     <div className="how-we-work">
       <h2 className="title">HOW WE WORK</h2>
