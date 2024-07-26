@@ -99,7 +99,7 @@
   
   @media only screen and (max-width: 769px) {
   .project-wrapper {
-    padding: 5% 5%;
+    padding: 5% 18%;
   }
 
   .partner-main {
@@ -177,4 +177,21 @@
     font-size: 1.1rem;
     max-width: 100%;
   }
+}
+
+@media(min-width:769px) and (max-width:1024px){
+  .partner-image-tobe-added {
+    height: 30vh;
+    width: 25vw;
+    background-color: lightgray;
+    border-radius: 20px;
+    margin-right: 20px;
+  }
+  .partner-image {
+    max-width: 600px;
+    height: auto;
+    padding: 2%;
+    border-radius: 20px;
+  }
+  
 }
