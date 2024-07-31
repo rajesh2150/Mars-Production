@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from 'react';
-import Globe from 'react-globe.gl';
-import MarsImage from '../../../assests/Home/2k_mars.jpg'; // Correct path to the Mars image
+import React, { useEffect, useRef } from "react";
+import Globe from "react-globe.gl";
+import MarsImage from "../../../assests/Home/2k_mars.jpg"; // Assuming the correct path
 
 const GlobeCom = () => {
   const globeEl = useRef();
@@ -12,13 +12,15 @@ const GlobeCom = () => {
   }, []);
 
   return (
-    <div>
+    <div style={{ border: "1px solid red" }}>
       <Globe
         ref={globeEl}
         width={400}
         height={400}
-        backgroundColor="#ffffff"
-        globeImageUrl={MarsImage}
+        backgroundColor="#fff"
+        globeImageUrl={
+          "https://www.solarsystemscope.com/textures/download/2k_mars.jpg"
+        }
       />
     </div>
   );

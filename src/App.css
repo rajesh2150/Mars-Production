@@ -17,31 +17,10 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -1;
-  background-size: cover;
+  z-index: -1000;
   object-fit: fill;
-  transform: scaleY(-1);
-  transition: all 2s;
-  
-  animation: rotateBackground 30s linear infinite;
- 
 }
 
-@keyframes rotateBackground {
-  from {
-    transform: rotate(0deg);
-    height: 100vh;
-    transition: all 2s;
-    
-   object-position: center;
-  }
-  to {
-    transform: rotate(15deg);
-   object-position: center;
-   height: 100vh;
-   transition: all 2s;
-  }
-}
 
 @media only screen and (max-width: 769px) {
   body {
