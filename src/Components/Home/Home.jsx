@@ -6,6 +6,7 @@ import PartnerTestimonial from "./PartnerTestimonial";
 import Upcoming from "./Upcoming";
 import HowWeWork from "./HowWeWork";
 import Footer from "../common/Footer";
+import GlobeCom from "./Carosual/GlobeCom";
 
 const Home = () => {
   const [loaded, setLoaded] = useState(false);
@@ -24,6 +25,8 @@ const Home = () => {
     <>
       <div className={`home-wrapper ${loaded ? 'loaded' : ''}`}>
         <div className="carosual-div">
+        <GlobeCom/>
+
           <Carosual />
         </div>
       </div>
