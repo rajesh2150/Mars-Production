@@ -21,11 +21,15 @@ const Home = () => {
     return () => clearTimeout(timeoutId); // Cleanup on unmount or before re-run
   }, []);
 
+
+  useEffect(()=>{
+    fetch("http://localhost:1337/api/Latests").then(res=>res.json()).then(data=>console.log(data))
+  },[])
   return (
     <>
       <div className={`home-wrapper ${loaded ? 'loaded' : ''}`}>
         <div className="carosual-div">
-        <GlobeCom/>
+        {/* <GlobeCom/> */}
 
           <Carosual />
         </div>
