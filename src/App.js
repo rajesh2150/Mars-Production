@@ -9,12 +9,15 @@ import Partner from './Components/Partner/Partner';
 import HumanOnMars from './Components/HumanOnMars/HumanOnMars';
 import News from './Components/News/News';
 // import Img1 from "../assets/Home/Mask group.png";
-import Img1 from "./assests/Home/Mask group.png"
+import Img1 from "./assests/Home/Maskgroup.png"
 import Technology from './Components/Technology/Technology';
+import GlobeComponent from './Components/Globe/Globe-Test';
+import ScrollToTop from './Components/Scroll/ScrollToTop';
 const App = () => {
   return (
     <div>
       <BrowserRouter>
+      <ScrollToTop/>
       <Navbar/>
       <div className="app-container">
         <img className='.img' src={Img1} alt="" />
@@ -27,6 +30,7 @@ const App = () => {
         <Route path='/humanonmars' element={<HumanOnMars/>}/>
         <Route path='/news' element={<News/>}/>
         <Route path='/technology' element={<Technology/>}/>
+        <Route path='/globe' element={ <GlobeComponent rotateGlobe={true} />}/>
       </Routes>
       </div>
       </BrowserRouter>
