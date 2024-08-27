@@ -87,3 +87,12 @@ html, body {
   top: 0;
   left: 0;
 }
+.fade {
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+
+.fade-out {
+  opacity: 0.5 ;
+  transition: opacity 2s linear;
+}

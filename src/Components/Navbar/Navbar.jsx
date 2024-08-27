@@ -45,7 +45,11 @@ const Navbar = () => {
       <div className={`navbar-links burger-links ${toggle ? 'show' : ''}`}>
         <NavLink className={"NavLink"} onClick={closeMenu} exact to={'/'}>Home</NavLink>
         <NavLink className={"NavLink"} onClick={closeMenu} to={'/aboutus'}>About us</NavLink>
-        <NavLink className={"NavLink"} onClick={closeMenu} to={'/project'}>Project</NavLink>
+        {/* <NavLink className={"NavLink"} onClick={closeMenu} to={'/project'}>Project</NavLink> */}
+        <div>
+        
+        <a  className='NavLink' href={"/indexTwo.html"} rel="noopener noreferrer">Project</a>
+     </div>
         <NavLink className={"NavLink"} onClick={closeMenu} to={'/partner'}>Partner</NavLink>
         <NavLink className={"NavLink"} onClick={closeMenu} to={'/humanonmars'}>Human on Mars</NavLink>
         <NavLink className={"NavLink"} onClick={closeMenu} to={'/news'}>News</NavLink>

@@ -5,6 +5,8 @@ import Footer from "../common/Footer";
 import "../common/footer.css";
 import About1 from "../../assests/AboutUS/image 10.png"
 import About2 from "../../assests/AboutUS/image 24.png"
+// import logo from "Mars-Production\src\assests\Mars_productions_flat-01 1.png"
+import logo from "../../assests/Mars_productions_flat-01 1.png"
 const AboutUs = () => {
   const location = useLocation();
 
@@ -48,12 +50,11 @@ const AboutUs = () => {
           <div className="right-side">
             <img
               className="right-side-image"
-              src="path_to_your_image.jpg"
+              src={logo}
               alt="Company Logo"
             />
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
+              
             </p>
           </div>
         </div>

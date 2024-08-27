@@ -6,17 +6,21 @@ const Upcoming = () => {
 
   const [latest,setLatest]=useState([])
   const [blogs,setBlogs] =useState([])
+  const [upcoming,setUpcoming] = useState([])
   useEffect(() => {
     async function fetchData() {
       const resp = await fetch("http://13.201.135.134:1337/api/latests?populate=*");
       const resp2 = await fetch("http://13.201.135.134:1337/api/blogs?populate=*");
+      const resp3 = await fetch("http://13.201.135.134:1337/api/upcomings?populate=*");
       const res = await resp.json();
       const res2 = await resp2.json();
+      const res3 = await resp3.json();
       console.log(res.data);
-      console.log(res2.data);
+      console.log(res3.data);
       setLatest(res.data);
       setBlogs(res2.data)
-      
+      setUpcoming(res3.data)
+     
     }
     fetchData();
   }, []);
@@ -46,7 +50,9 @@ const Upcoming = () => {
 
           <img
             className="poster"
-            src={Banner}
+            src= {`http://13.201.135.134:1337${[0].attributes?.image?.data[0]?.attributes?.url}`}
+            // [0].attributes.image.data[0].attributes.
+            
             alt="Upcoming Movie Poster"
           />
           <div className="visit-now">
@@ -64,6 +70,9 @@ const Upcoming = () => {
              
              {latest?.map((latest,ind)=>{
               const imgurl = `http://13.201.135.134:1337${latest?.attributes?.image?.data[0]?.attributes?.url}`
+              const url = latest?.attributes?.Link
+
+
       // [0].attributes.image.data[0].attributes.url
 
 
@@ -71,11 +80,14 @@ const Upcoming = () => {
                 <>
                 <div className="latest-item">
                 <div className="blog-item">
+                  <a href={url} target="_blank">
+
                   <img
                     className="blog-image"
                     src={imgurl}
                     alt={latest?.attributes?.title}
-                  />
+                    />
+                    </a>
                   <p className="blog-title">{latest?.attributes?.title}</p>
                 </div>
               </div>
@@ -89,17 +101,22 @@ const Upcoming = () => {
               {blogs.map((blog,ind)=>{
 
                 const imgUrl = `http://13.201.135.134:1337${blog?.attributes.image.data[0].attributes.url}`;
+                const url = blog?.attributes?.Link
                 // const imgurl = `http://13.201.135.134:1337${latest?.attributes?.image?.data[0]?.attributes?.url}`
 
                 return(
                   <>
                   <div className="blog-item blog-bg" key={ind}>
+                    <a href={url} target="_blank">
+      
+                    
                 <img
                   className="blog-image"
                   src={imgUrl}
 
                   alt="Blog 1"
                 />
+                </a>
                 <p className="blog-title">
                  {blog.attributes?.title}
                 </p>

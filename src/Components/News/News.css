@@ -67,7 +67,12 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-
+.blog-image-1 {
+  width: -webkit-fill-available;
+  height: 100%;
+  margin-right: 1%;
+  border-radius: 5%;
+}
 /* Media Query for max-width 769px */
 @media only screen and (max-width: 769px) {
   .news-p {

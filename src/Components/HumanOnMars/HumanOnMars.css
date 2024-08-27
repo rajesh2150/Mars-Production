@@ -4,6 +4,7 @@
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+
 }
 
 .team-wrapper.loaded {
@@ -66,6 +67,8 @@
 .carrer-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 10% 8%;
   gap: 30px;
 }
@@ -81,7 +84,8 @@
 
 .carrer-form {
   background-color: #343235;
-  width: 35%;
+  width: 85%;
+  margin: 2%;
   text-align: center;
   border-radius: 3%;
   position: relative;
@@ -116,7 +120,7 @@ input:focus {
 
 .connect-with-us {
   padding: 1%;
-  width: 25%;
+  width: 250px;
   background-color: #FF7E35;
   border-radius: 20px;
 }
@@ -128,6 +132,11 @@ input:focus {
   line-height: 32.49px;
   text-align: left;
   cursor: pointer;
+  padding: 2%;
+  margin: 2%;
+  background-color: #FF7E35;
+  border-radius: 20px;
+  border: none;
 }
 
 @media (max-width: 769px) {

@@ -39,7 +39,7 @@ const Partner = () => {
           </div>
         </div>
 
-        <div className="partner-image-wrapper">
+        {/* <div className="partner-image-wrapper">
           <div>
             <img 
             src={Partner4}
@@ -57,7 +57,7 @@ const Partner = () => {
             />
             <p className="p2 p2-padding">Distributors / OTT / Buyers</p>
           </div>
-        </div>
+        </div> */}
 
         <div className="partners-section">
           <p className="p1">Our Partners</p>
