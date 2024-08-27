@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './Navbar.css';
 import { NavLink } from 'react-router-dom';
 import MarsLogo from "../../assests/Home/MarsProLogo.png"
-
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
@@ -25,8 +24,15 @@ const Navbar = () => {
       <div className='navbar-links show-menu'>
         <NavLink className={"NavLink"} exact to={'/'}>Home</NavLink>
         <NavLink className={"NavLink"} to={'/aboutus'}>About us</NavLink>
-        <NavLink className={"NavLink"} to={'/project'}>Project</NavLink>
+        {/* <NavLink className={"NavLink"} to={'/project'}>Project</NavLink> */}
+        {/* <NavLink className={"NavLink"}  to={'/project'}>Project</NavLink> */}
+    
+        <div>
+        
+          <a  className='NavLink' href={"/indexTwo.html"} rel="noopener noreferrer">Project</a>
+       </div>
         <NavLink className={"NavLink"} to={'/partner'}>Partner</NavLink>
+        
         <NavLink className={"NavLink"} to={'/humanonmars'}>Human on Mars</NavLink>
         <NavLink className={"NavLink"} to={'/news'}>News</NavLink>
         <NavLink className={"NavLink"} to={'/technology'}>Technology</NavLink>
