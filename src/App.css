@@ -20,9 +20,9 @@ body {
   z-index: -1;
   background-size: cover;
   object-fit: fill;
-  transform: scaleY(-1);
+  /* transform: scaleY(-1); */
   transition: all 2s;
-  
+  transform: scale(1);
   animation: rotateBackground 30s linear infinite;
  
 }

@@ -8,8 +8,8 @@ const Upcoming = () => {
   const [blogs,setBlogs] =useState([])
   useEffect(() => {
     async function fetchData() {
-      const resp = await fetch("http://localhost:1337/api/latests?populate=*");
-      const resp2 = await fetch("http://localhost:1337/api/blogs?populate=*");
+      const resp = await fetch("http://13.201.135.134:1337/api/latests?populate=*");
+      const resp2 = await fetch("http://13.201.135.134:1337/api/blogs?populate=*");
       const res = await resp.json();
       const res2 = await resp2.json();
       console.log(res.data);
@@ -62,8 +62,10 @@ const Upcoming = () => {
           {activeTab === "latest" ? (
             <div className="latest-content">
              
-             {latest.map((latest,ind)=>{
-              const imgurl = `http://localhost:1337${latest.attributes.image.data.attributes.url}`
+             {latest?.map((latest,ind)=>{
+              const imgurl = `http://13.201.135.134:1337${latest?.attributes?.image?.data[0]?.attributes?.url}`
+      // [0].attributes.image.data[0].attributes.url
+
 
               return(
                 <>
@@ -72,9 +74,9 @@ const Upcoming = () => {
                   <img
                     className="blog-image"
                     src={imgurl}
-                    alt={latest.attributes.title}
+                    alt={latest?.attributes?.title}
                   />
-                  <p className="blog-title">{latest?.attributes.description}</p>
+                  <p className="blog-title">{latest?.attributes?.title}</p>
                 </div>
               </div>
                 </>
@@ -86,7 +88,9 @@ const Upcoming = () => {
 
               {blogs.map((blog,ind)=>{
 
-                const imgUrl = `http://localhost:1337${blog?.attributes.image.data.attributes.url}`;
+                const imgUrl = `http://13.201.135.134:1337${blog?.attributes.image.data[0].attributes.url}`;
+                // const imgurl = `http://13.201.135.134:1337${latest?.attributes?.image?.data[0]?.attributes?.url}`
+
                 return(
                   <>
                   <div className="blog-item blog-bg" key={ind}>

@@ -52,11 +52,13 @@ const News = () => {
   const [blogs,setBlogs]=useState([])
   useEffect(() => {
     async function fetchData() {
-      const resp = await fetch("http://localhost:1337/api/events?populate=*");
+      const resp = await fetch("http://13.201.135.134:1337/api/events?populate=*");
+      const resp2 = await fetch("http://13.201.135.134:1337/api/news-blogs?populate=*");
       const res = await resp.json();
+      const res2 = await resp2.json();
       console.log(res.data);
       setEvents(res.data);
-      setBlogs(res.data)
+      setBlogs(res2.data)
     }
     fetchData();
   }, []);
@@ -97,7 +99,6 @@ const News = () => {
             <img
               className="poster news-poster"
               src={NewsImg}
-              // src="https://s3-alpha-sig.figma.com/img/4a84/3fc5/2f6921a34dc8ad3aaeacc0206b9ea944?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Lf0fSyqeyfKKzpKWIKg-ZNBF8uCMIgmBVLZCHXfjLTYaMaJhY6mPjbXOxGpLiXExev4CN5f4xiuvm0yua70eswbtTjVPOoRK-0LNWRMCR7-q6hSkDgFkzoL7Rnhbg3YDhrJ7nk54fi5zzDdl8A5ONOov1hWQ3p6qDcwDnxclgjvcZbrjklLPf-e95Qrr4KcSyfryd7-DjaUQCjyoWKMQ8whSgOf9uhuYahE1xymi6--moT9UX4VBKR1W500nTREF0jhkqJwgl0Z5UEC4559HmBUkLwaMLoiFL9gluJ3AFcyIlF~XCuolJbsRnwwgn3W-xnw9dSWnRJiG6JJKaO--Mw__"
               alt="Upcoming Movie Poster"
             />
           </div>
@@ -105,8 +106,9 @@ const News = () => {
             {activeTab === "latest" ? (
               <div className="latest-content">
                 {
-                  blogs.map((blog,ind)=>{
-                    const blogUrl = `http://localhost:1337${blog.attributes.image.data.attributes.url}`
+                  blogs?.map((blog,ind)=>{
+                    const blogUrl = `http://13.201.135.134:1337${blog?.attributes?.image?.data[0]?.attributes?.url}`
+                    // [0].attributes.image.data[0].attributes.url
 
                     return(<>
                     <div className="latest-item">
@@ -116,7 +118,7 @@ const News = () => {
                       src={blogUrl}
                       alt="Blog 1"
                     />
-                    <p className="blog-title">{blog.attributes?.description}</p>
+                    <p className="blog-title">{blog.attributes?.title}</p>
                   </div>
                 </div>
                     </>)
@@ -128,7 +130,7 @@ const News = () => {
               <div className="blog-list">
                                 {
                   events.map((event,ind)=>{
-                    const blogUrl = `http://localhost:1337${event.attributes.image.data.attributes.url}`
+                    const blogUrl = `http://13.201.135.134:1337${event?.attributes?.image?.data[0]?.attributes?.url}`
 
                     return(<>
                     <div className="latest-item">
@@ -136,10 +138,9 @@ const News = () => {
                     <img
                       className="blog-image"
                       src={blogUrl}
-                      // src="https://s3-alpha-sig.figma.com/img/89ac/b776/e821f6d1384c604e34ba62332bec60a8?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KVlCJUmnnfH-VVN4TtYBxbl8H-n8JNPEwYeqpj5qt-s7prgY-ZHbQOnoHwc9AX4rM55Xw7p2hfRg~5bnCnuy2moVJqkLM2s5AFyU1aL19ZNKG0CCa9l2TAdTxpsPIVZ8FEE0bjNTh6zf1m06t-DGNkq7SS4WtMP26JL6Kg4slomS58d~vT7reYaHpyBDu9osDxjtofIf9r7B6-HfqWiCeoqiC5vIHvL7MexyRFQtjgfg4DGjNe0Q56miyJqkuzf2nlt5YPH6FXdaYfa0ckqYv2z1f4jo9I8ObRHG0FC39XAp5PLHJBlp9uAcEt23pvqtcm454G3Hehxyx~UNlAO4Lw__"
                       alt="Blog 1"
                     />
-                    <p className="blog-title">{event.attributes?.description}</p>
+                    <p className="blog-title">{event.attributes?.title}</p>
                   </div>
                 </div>
                     </>)
@@ -157,7 +158,7 @@ const News = () => {
           <div className="p1 scroll-btn">prev 
           </div>
          
-            {previousNews.map((news, ind) => (
+            {previousNews?.map((news, ind) => (
               <> 
                 <div key={news.id} className="prev-div"> 
                   <img className="prev-news-image" src={news.url} alt="News"/>

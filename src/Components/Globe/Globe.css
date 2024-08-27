@@ -1,0 +1,24 @@
+.hero--globe {
+    position: relative;
+    z-index: 100;
+    margin: 0 auto;
+    border: 1px solid red;
+   
+  }
+
+  .mars-globe{
+animation:rotateMars infinite 10s ease-in-out ;
+  }
+ 
+  
+  
+  @keyframes rotateMars {
+    from {
+      transform: rotateY(0deg);
+      
+    }
+    to {
+      transform: rotateY(180deg);
+     
+    }
+  }

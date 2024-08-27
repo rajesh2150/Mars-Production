@@ -21,7 +21,7 @@ const Technology = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
     async function fetchData() {
-      const resp = await fetch("http://localhost:1337/api/technologies?populate=*");
+      const resp = await fetch("http://13.201.135.134:1337/api/technologies?populate=*");
       const res = await resp.json();
       console.log(res.data);
       setData(res.data);
@@ -33,9 +33,9 @@ const Technology = () => {
     <>
       <div className="project-wrapper technology-wrapper">
         <div className="main-div-tech tech-main">
-          {data.map((tech, ind) => {
+          {data?.map((tech, ind) => {
             const { title, description, image } = tech.attributes;
-            const imageUrl = `http://localhost:1337${image?.data[0]?.attributes?.url}`;
+            const imageUrl = `http://13.201.135.134:1337${image?.data[0]?.attributes?.url}`;
             return (
               <div key={ind} className="sub-div">
                 <div className="text-content">

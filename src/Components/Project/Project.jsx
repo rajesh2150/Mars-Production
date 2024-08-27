@@ -5,8 +5,9 @@ import Footer from "../common/Footer";
 
 const Project = () => {
   const location = useLocation();
+const [apiImg,setApiImg] = useState([])
+  useEffect(async() => {
 
-  useEffect(() => {
     const projectWrapper = document.querySelector(".project-wrapper");
     if (projectWrapper) {
       projectWrapper.classList.remove("loaded");
@@ -21,17 +22,17 @@ const Project = () => {
   useEffect(() => {
     async function fetchData() {
       const resp = await fetch(
-        "http://localhost:1337/api/completd-projects?populate=*"
+        "http://13.201.135.134:1337/api/completd-projects?populate=*"
       );
       const resp2 = await fetch(
-        "http://localhost:1337/api/ongoing-projects?populate=*"
+        "http://13.201.135.134:1337/api/ongoing-projects?populate=*"
       );
       const res = await resp.json();
       const res2 = await resp2.json();
       console.log(res.data);
       setCompleted(res.data);
       setOngoing(res2.data);
-      console.log(res2.data);
+      console.log("on going",res2.data);
     }
     fetchData();
   }, []);
@@ -39,7 +40,7 @@ const Project = () => {
     <>
       <div className="project-wrapper fade-in">
         <p className="p1">Completed</p>
-        {completed.map((comp, ind) => (
+        {completed?.map((comp, ind) => (
           <>
             <div className="main-div project" key={comp.id}>
               <div className="project-total-desc">
@@ -65,7 +66,10 @@ const Project = () => {
         </div>
         <p className="p1 ongoing-p1">Ongoing</p>
         {ongoing.map((ongo, ind) => {
-          const imageUrl = `http://localhost:1337${ongo?.attributes.image.data[0].attributes.url}`;
+const imageUrl = `http://13.201.135.134:1337${ongo?.attributes.image.data[0].attributes.url}`;
+
+// [0].attributes.image.data[0].attributes.url
+// [0].attributes.image.data.attributes.url
           
 
           return (

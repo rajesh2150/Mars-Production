@@ -57,7 +57,7 @@
 
 .aboutus-p1 {
   font-family: 'Futura Hv BT';
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 400;
   text-align: left;
   color: #FF7E35;
@@ -65,7 +65,7 @@
 
 .aboutus-p2 {
   font-family: 'Futura Bk BT';
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
   text-align: left;
   color: white;
@@ -90,7 +90,7 @@
 }
 
 .second-main-div {
-  margin-top: 20%;
+  /* margin-top: 20%; */
   height: 76vh;
   width: 70vw;
   background-color: #343235;
@@ -110,7 +110,9 @@
 .p-desc {
   max-width: 75%;
 }
-
+.p-desc{
+  font-size: 1.3rem;
+}
 @media(max-width:769px){
   .about-us-wrapper{
     /* padding-inline: 1rem; */
@@ -132,7 +134,7 @@
   }
   .aboutus-p1{
   font-family: 'Futura Hv BT';
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 400;
   line-height: 85%;
   text-align: left;
@@ -142,7 +144,7 @@
   }  
   .aboutus-p2{
   font-family: Futura Bk BT;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 100%;
   text-align: left;
@@ -215,7 +217,7 @@
   }
   .aboutus-p1{
   font-family: 'Futura Hv BT';
-  font-size: 35px;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 85%;
   text-align: left;
@@ -225,7 +227,7 @@
   }  
   .aboutus-p2{
   font-family: Futura Bk BT;
-  font-size: 25px;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 100%;
   text-align: left;

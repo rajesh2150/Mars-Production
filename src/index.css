@@ -1,11 +1,14 @@
+
 * {
   margin: 0px;
   padding: 0px;
 }
+
 body {
   width: 100%;
   height: 100%;
-  background-image: url("https://s3-alpha-sig.figma.com/img/a6b0/a778/81d9c704a0d249d57c9ad30e7c1a4766?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Gxwt24hc3fkHDfUB0pzC-W0TED4oB38zCwgEDgxiJMexiQHonhU8QXhntCiP0Vo1Gujajm~OAYuhDTqSJIGR~gSNhANLRDRpeFRXB927L9dCMOnN0MQcsainiohNWqFJGKlkhCF5zUcfo884HmZp0ZXHjy8HSzbKOYBsn8QE9~wSKxmvAwF21fzlaD7290U8vTAag5jvCLrcJN60Z169qmocZeVORDQJWGcTDfLCCyo9JQIT53RUETwv4xUL-Qe8zjKHd1Tr7Ar3Ah05qnJY5FxuASYzQyvLQSbreK~4XHgag8fV7PB9VL416cXlo80GN4wkjMPLF8eJ8KCCut~FaA__");
+  background-image: url("../src/assests/Home/Maskgroup.png");
+  
 
 }
 

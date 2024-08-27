@@ -23,7 +23,7 @@ const Home = () => {
 
 
   useEffect(()=>{
-    fetch("http://localhost:1337/api/Latests").then(res=>res.json()).then(data=>console.log(data))
+    fetch("http://13.201.135.134:1337/api/Latests").then(res=>res.json()).then(data=>console.log(data))
   },[])
   return (
     <>
