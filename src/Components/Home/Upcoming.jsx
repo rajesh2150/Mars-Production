@@ -16,7 +16,7 @@ const Upcoming = () => {
       const res2 = await resp2.json();
       const res3 = await resp3.json();
       console.log(res.data);
-      console.log(res3.data);
+      console.log("upcoming is ",res3.data[0].attributes.image.data[0].attributes.url  );
       setLatest(res.data);
       setBlogs(res2.data)
       setUpcoming(res3.data)
@@ -50,14 +50,14 @@ const Upcoming = () => {
 
           <img
             className="poster"
-            src= {`http://13.201.135.134:1337${[0].attributes?.image?.data[0]?.attributes?.url}`}
+            src= {`http://13.201.135.134:1337${upcoming[0]?.attributes?.image?.data[0]?.attributes?.url}`}
             // [0].attributes.image.data[0].attributes.
             
             alt="Upcoming Movie Poster"
           />
           <div className="visit-now">
             <a
-              href="https://www.aevumjagut.com"
+              href="https://www.aevumjagat.com/"
               target="_blank"
               rel="noopener noreferrer">
               Visit Now →

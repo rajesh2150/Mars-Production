@@ -26,6 +26,7 @@ body {
   line-height: 24.37px;
   text-align: left;
   padding: 1% 0%;
+  color:white;
 }
 
 .news-link {
@@ -35,6 +36,8 @@ body {
   font-weight: 400;
   line-height: 24.37px;
   text-align: left;
+  /* text-decoration: ; */
+  color: white;
 }
 
 .news-image {
@@ -48,6 +51,10 @@ body {
   width: 40vw;
   object-fit: fill;
   border-radius: 0px;
+}
+.news-month{
+  text-decoration: none;
+  color: white;
 }
 
 .previou-p {
@@ -91,8 +98,16 @@ body {
   }
 
   .news-link {
+  
     font-size: 18px;
     line-height: 20px;
+    color: red;
+    text-decoration: none;
+  }
+  .news-link-text{
+    color: white;
+    text-decoration: none;
+
   }
 
   .news-image {
@@ -104,6 +119,11 @@ body {
     height: auto;
     width: 100%;
     object-fit: cover;
+  }
+
+  .news-month{
+    text-decoration: none;
+    color: white;
   }
 
   .previou-p {

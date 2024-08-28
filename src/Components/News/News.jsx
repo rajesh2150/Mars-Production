@@ -6,7 +6,7 @@ import NewsImg from "../../assests/News/News.png";
 const News = () => {
   const [activeTab, setActiveTab] = useState("latest");
 
-  // const [activeTab, setActiveTab] = useState("latest");
+const [prevNews,setPrevNews] = useState([])
   const previousNews = [
     {
       id: 1,
@@ -58,11 +58,17 @@ const News = () => {
       const resp2 = await fetch(
         "http://13.201.135.134:1337/api/news-blogs?populate=*"
       );
+      const resp3 = await fetch(
+        "http://13.201.135.134:1337/api/news-letters"
+      );
+
       const res = await resp.json();
       const res2 = await resp2.json();
-      console.log(res.data);
+      const res3 = await resp3.json();
+      console.log("prev",res3.data);
       setEvents(res.data);
       setBlogs(res2.data);
+      setPrevNews(res3.data)
     }
     fetchData();
   }, []);
@@ -73,11 +79,10 @@ const News = () => {
         <p className="p2 news-p2">This is our latest newsletter.</p>
         <p className="p2 news-p2">
           To view all our previous newsletters, go to
-          <a className="news-link">
+          <a className="news-link" href="https://www.youtube.com/@MarsProductionsPvtLtd">
             {" "}
-            our
-            <br />
-            YouTube channel.{" "}
+           <p className="news-link-text"> our YouTube channel.</p>
+         
           </a>
         </p>
         <div className="upcoming-hero">
@@ -167,14 +172,16 @@ const News = () => {
         <div className="previous-news-wrapper">
           <div className="p1 scroll-btn">prev</div>
 
-          {previousNews?.map((news, ind) => (
+          {prevNews?.map((news, ind) => (
             <>
               <div key={news.id} className="prev-div">
-                <img className="prev-news-image" src={news.url} alt="News" />
-                <p className="p2">{news.month}</p>
+                <a className="news-month" target="_blank" href={news?.attributes?.Link}>{news?.attributes?.month}</a>
+                {/* <img className="prev-news-image" src={news.url} alt="News" /> */}
+                {/* <p className="p2">{news.month}</p> */}
               </div>
             </>
           ))}
+
 
           <div className="p1 scroll-btn ">next</div>
         </div>
