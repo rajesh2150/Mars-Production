@@ -140,6 +140,7 @@ body {
   }
 
   .scroll-btn {
+    cursor: pointer;
     margin: 40px 40px 40px 40px;
   }
 

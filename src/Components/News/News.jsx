@@ -166,7 +166,7 @@ const [prevNews,setPrevNews] = useState([])
 
         <p className="p1 previou-p">Previous News</p>
         <div className="previous-news-wrapper">
-          <div className="p1 scroll-btn">prev</div>
+          <div className="p1 scroll-btn">&lt;</div>
 
           {prevNews?.map((news, ind) => (
             <>
@@ -181,7 +181,7 @@ const [prevNews,setPrevNews] = useState([])
           ))}
 
 
-          <div className="p1 scroll-btn ">next</div>
+          <div className="p1 scroll-btn ">&gt;</div>
         </div>
       </div>
       <Footer />
