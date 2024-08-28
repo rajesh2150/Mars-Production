@@ -44,6 +44,11 @@ body {
   background-color: transparent;
   height: 40vh;
   width: 50vw;
+  
+}
+.prev-div{
+  margin: 1%;
+
 }
 
 .news-poster {
@@ -53,6 +58,7 @@ body {
   border-radius: 0px;
 }
 .news-month{
+  font-size: 1rem;
   text-decoration: none;
   color: white;
 }
@@ -67,6 +73,8 @@ body {
   width: 150px;
   background-color: lightgray;
   object-fit: cover;
+  border-radius: 5%;
+
 }
 
 .previous-news-wrapper {

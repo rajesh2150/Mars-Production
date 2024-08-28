@@ -175,8 +175,10 @@ const [prevNews,setPrevNews] = useState([])
           {prevNews?.map((news, ind) => (
             <>
               <div key={news.id} className="prev-div">
-                <a className="news-month" target="_blank" href={news?.attributes?.Link}>{news?.attributes?.month}</a>
-                {/* <img className="prev-news-image" src={news.url} alt="News" /> */}
+                <a className="news-month" target="_blank" href={news?.attributes?.Link}>
+                <img className="prev-news-image" src={"https://www.pngall.com/wp-content/uploads/9/Google-Drive-Logo-PNG-HD-Image.png"}  />
+                  {news?.attributes?.month}
+                  </a>
                 {/* <p className="p2">{news.month}</p> */}
               </div>
             </>
