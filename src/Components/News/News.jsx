@@ -172,8 +172,10 @@ const [prevNews,setPrevNews] = useState([])
             <>
               <div key={news.id} className="prev-div">
                 <a className="news-month" target="_blank" href={news?.attributes?.Link}>
+                  <div style={{height:'150px',width:'150px',backgroundColor:"#D3D3D3"}}>
                 <img className="prev-news-image" src={"https://www.pngall.com/wp-content/uploads/9/Google-Drive-Logo-PNG-HD-Image.png"}  />
-                  {news?.attributes?.month}
+                  </div>
+                 <br/> {news?.attributes?.month}
                   </a>
                 {/* <p className="p2">{news.month}</p> */}
               </div>
