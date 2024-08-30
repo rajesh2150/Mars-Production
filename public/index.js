@@ -51,7 +51,7 @@ container.createHotspot(document.getElementById('iframeselect'), { yaw: -0.35, p
 
 // HTML sources.
 var hotspotHtml = {
-  youtube: '<iframe id="youtube" width="990" height="350" src="https://www.youtube.com/embed/N9KXh34IT94?enablejsapi=1" frameborder="0"></iframe>',
+  youtube: '<iframe id="youtube" width="990" height="350" src="https://www.youtube.com/embed/N9KXh34IT94?enablejsapi=1" frameborder="0" allowfullscreen></iframe>',
   youtubeWithControls: '<iframe id="youtubeWithControls" width="990" height="350" src="https://www.youtube.com/embed/tY8aNLzUUJw?enablejsapi=1" frameborder="0" allowfullscreen></iframe>',
 };
 
@@ -76,10 +76,16 @@ function switchHotspot(id) {
     // Initialize YouTube player after inserting the iframe
     player = new YT.Player(id, {
       events: {
-        'onStateChange': onPlayerStateChange
+        'onStateChange': onPlayerStateChange,
+        'onReady': onPlayerReady  
       }
     });
-  }, 1000);
+  }, 3000);
+}
+
+function onPlayerReady(event) {
+  event.target.playVideo();  
+  // stopCarousel();  
 }
 
 function startCarousel() {
@@ -87,7 +93,7 @@ function startCarousel() {
   var index = 0;
 
   carouselInterval = setInterval(function () {
-    if (isCarouselRunning) {  // Only switch if carousel is still running
+    if (isCarouselRunning) {  
       switchHotspot(ids[index]);
       index = (index + 1) % ids.length;
     }
@@ -107,7 +113,7 @@ function onPlayerStateChange(event) {
     console.log('Video is paused');
   } else if (event.data === YT.PlayerState.ENDED) {
     console.log('Video ended');
-    startCarousel(); // Optionally restart the carousel after video ends
+    startCarousel(); 
   }
 }
 
