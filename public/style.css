@@ -96,3 +96,32 @@ html, body {
   opacity: 0.5 ;
   transition: opacity 2s linear;
 }
+#prevButton, #nextButton {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#prevButton:hover, #nextButton:hover {
+  background-color: #0056b3;
+}
+
+#prevButton:focus, #nextButton:focus {
+  outline: none;
+}
+
+#iframespot {
+  margin-bottom: 20px; /* Add some space between iframe and buttons */
+  text-align: center; /* Center the iframe */
+}
+
+button {
+  text-align: center; /* Center the buttons */
+}

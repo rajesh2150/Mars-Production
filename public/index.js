@@ -55,16 +55,16 @@ var hotspotHtml = {
   youtubeWithControls: '<iframe id="youtubeWithControls" width="990" height="350" src="https://www.youtube.com/embed/tY8aNLzUUJw?enablejsapi=1" frameborder="0" allowfullscreen></iframe>',
 };
 
-
-var carouselInterval;
-var isCarouselRunning = true;
 var player; // YouTube player instance
+var currentIndex = 0; // Keep track of the current iframe
 
 function onYouTubeIframeAPIReady() {
   // This function will be called automatically by the YouTube API
 }
 
-function switchHotspot(id) {
+function switchHotspot(index) {
+  var ids = Object.keys(hotspotHtml);
+  var id = ids[index];
   var wrapper = document.getElementById('iframespot');
 
   wrapper.classList.add('fade-out');
@@ -80,60 +80,37 @@ function switchHotspot(id) {
         'onReady': onPlayerReady  
       }
     });
-  }, 3000);
+  }, 1000); // Reduce the delay to 1 second
 }
 
 function onPlayerReady(event) {
   event.target.playVideo();  
-  // stopCarousel();  
-}
-
-function startCarousel() {
-  var ids = Object.keys(hotspotHtml);
-  var index = 0;
-
-  carouselInterval = setInterval(function () {
-    if (isCarouselRunning) {  
-      switchHotspot(ids[index]);
-      index = (index + 1) % ids.length;
-    }
-  }, 3000);
-}
-
-function stopCarousel() {
-  clearInterval(carouselInterval);
-  isCarouselRunning = false;
 }
 
 function onPlayerStateChange(event) {
   if (event.data === YT.PlayerState.PLAYING) {
     console.log('Video is playing');
-    stopCarousel();
   } else if (event.data === YT.PlayerState.PAUSED) {
     console.log('Video is paused');
   } else if (event.data === YT.PlayerState.ENDED) {
     console.log('Video ended');
-    startCarousel(); 
   }
+}
+
+function showPrevious() {
+  currentIndex = (currentIndex - 1 + Object.keys(hotspotHtml).length) % Object.keys(hotspotHtml).length;
+  switchHotspot(currentIndex);
+}
+
+function showNext() {
+  currentIndex = (currentIndex + 1) % Object.keys(hotspotHtml).length;
+  switchHotspot(currentIndex);
 }
 
 window.onload = function () {
-  startCarousel();
+  switchHotspot(currentIndex);
 };
 
-// In case you have any click event elements, retain this part
-var switchElements = document.querySelectorAll('[data-source]');
-if (isCarouselRunning) {
-  for (var i = 0; i < switchElements.length; i++) {
-    var element = switchElements[i];
-    addClickEvent(element);
-  }
-}
-
-function addClickEvent(element) {
-  element.addEventListener('click', function () {
-    stopCarousel(); // Stop carousel when manual switch happens
-    switchHotspot(element.getAttribute('data-source'));
-  });
-}
-
+// Event listeners for the 'Previous' and 'Next' buttons
+document.getElementById('prevButton').addEventListener('click', showPrevious);
+document.getElementById('nextButton').addEventListener('click', showNext);
