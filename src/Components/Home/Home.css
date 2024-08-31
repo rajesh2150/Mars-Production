@@ -23,7 +23,7 @@
 
 .PartnerTestimonial-text {
   text-transform: uppercase;
-  font-family: Heavitas;
+
   font-size: 40px;
   font-weight: 400;
   line-height: 40.61px;
@@ -46,7 +46,7 @@
 .PartnerTestimonial-show {
   height: 65vh;
   width: 60vw;
-  background-color: #343235;
+  background-color: #44444450;
   margin-left: 5%;
   border-radius: 40px;
   display: flex;
@@ -80,8 +80,7 @@
 }
 
 .name {
-  font-family: Futura Hv BT;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 400;
   line-height: 48.74px;
   text-align: left;
@@ -89,7 +88,6 @@
 }
 
 .field {
-  font-family: Futura Hv BT;
   font-size: 20px;
   font-weight: 400;
   line-height: 20.31px;
@@ -98,10 +96,7 @@
 }
 
 .desc {
-  font-family: Futura Hv BT;
-  font-size: 25px;
-  font-weight: 400;
-  line-height: 25.38px;
+  font-size: 18px;
   text-align: left;
   color: white;
 }
@@ -150,7 +145,7 @@
   .PartnerTestimonial-show {
     height: 60%;
     width: 80vw;
-    background-color: #343235;
+    background-color: #44444450;
     margin-left: 3%;
     border-radius: 20px;
     display: flex;
@@ -167,7 +162,6 @@
     border-radius: 20px;
   }
   .fields {
-    font-family: Futura Hv BT;
     font-size: 20px;
     font-weight: 400;
     line-height: 22.31px;
@@ -175,7 +169,6 @@
     color: white;
   }
   .name {
-    font-family: Futura Hv BT;
     font-size: 30px;
     font-weight: 400;
     line-height: 28.74px;
@@ -183,7 +176,6 @@
     color: #ffffff;
   }
   .field {
-    font-family: Futura Hv BT;
     font-size: 15px;
     font-weight: 400;
     line-height: 15.31px;
@@ -191,7 +183,6 @@
     color: white;
   }
   .desc {
-    font-family: Futura Hv BT;
     font-size: 15px;
     font-weight: 400;
     text-align: left;
@@ -230,7 +221,6 @@
     border-radius: 20px;
   }
   .fields {
-    font-family: Futura Hv BT;
     font-size: 20px;
     font-weight: 400;
     line-height: 22.31px;
@@ -238,7 +228,6 @@
     color: white;
   }
   .name {
-    font-family: Futura Hv BT;
     font-size: 30px;
     font-weight: 400;
     line-height: 28.74px;
@@ -246,7 +235,6 @@
     color: #ffffff;
   }
   .field {
-    font-family: Futura Hv BT;
     font-size: 15px;
     font-weight: 400;
     line-height: 15.31px;
@@ -254,7 +242,6 @@
     color: white;
   }
   .desc {
-    font-family: Futura Hv BT;
     font-size: 15px;
     font-weight: 400;
     text-align: left;

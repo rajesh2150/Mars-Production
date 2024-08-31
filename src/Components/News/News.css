@@ -8,7 +8,7 @@ body {
 
 .news-p {
   text-transform: uppercase;
-  /* font-family: Futura Hv BT;
+  /* 
   font-size: 24px;
   font-weight: 400;
   line-height: 24.37px;
@@ -20,27 +20,35 @@ body {
 }
 
 .news-p2 {
-  font-family: Futura Hv BT;
+  
   font-size: 24px;
   font-weight: 400;
   line-height: 24.37px;
   text-align: left;
   padding: 1% 0%;
+  color:white;
 }
 
 .news-link {
   text-decoration: underline;
-  font-family: Futura Hv BT;
+  
   font-size: 24px;
   font-weight: 400;
   line-height: 24.37px;
   text-align: left;
+  /* text-decoration: ; */
+  color: white;
 }
 
 .news-image {
   background-color: transparent;
   height: 40vh;
   width: 50vw;
+  
+}
+.prev-div{
+  margin: 1%;
+
 }
 
 .news-poster {
@@ -48,6 +56,11 @@ body {
   width: 40vw;
   object-fit: fill;
   border-radius: 0px;
+}
+.news-month{
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
 }
 
 .previou-p {
@@ -60,6 +73,8 @@ body {
   width: 150px;
   background-color: lightgray;
   object-fit: cover;
+  border-radius: 5%;
+
 }
 
 .previous-news-wrapper {
@@ -67,7 +82,12 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-
+.blog-image-1 {
+  width: -webkit-fill-available;
+  height: 100%;
+  margin-right: 1%;
+  border-radius: 5%;
+}
 /* Media Query for max-width 769px */
 @media only screen and (max-width: 769px) {
   .news-p {
@@ -86,8 +106,16 @@ body {
   }
 
   .news-link {
+  
     font-size: 18px;
     line-height: 20px;
+    color: red;
+    text-decoration: none;
+  }
+  .news-link-text{
+    color: white;
+    text-decoration: none;
+
   }
 
   .news-image {
@@ -101,12 +129,18 @@ body {
     object-fit: cover;
   }
 
+  .news-month{
+    text-decoration: none;
+    color: white;
+  }
+
   .previou-p {
     font-size: 18px;
     padding: 5% 0;
   }
 
   .scroll-btn {
+    cursor: pointer;
     margin: 40px 40px 40px 40px;
   }
 
