@@ -1,15 +1,17 @@
-
 * {
   margin: 0px;
   padding: 0px;
+  font-family: "MDNichromeTest-Infra", sans-serif;
 }
 
+@font-face {
+  font-family: " MDNichromeTest-Infra";
+  src: url("./fonts/MDNichromeTest-Infra.otf") format("opentype");
+}
 body {
   width: 100%;
   height: 100%;
   background-image: url("../src/assests/Home/Maskgroup.png");
-  
-
 }
 
 body::-webkit-scrollbar {

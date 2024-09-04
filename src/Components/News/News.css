@@ -8,7 +8,7 @@ body {
 
 .news-p {
   text-transform: uppercase;
-  /* font-family: Futura Hv BT;
+  /* 
   font-size: 24px;
   font-weight: 400;
   line-height: 24.37px;
@@ -20,7 +20,7 @@ body {
 }
 
 .news-p2 {
-  font-family: Futura Hv BT;
+  
   font-size: 24px;
   font-weight: 400;
   line-height: 24.37px;
@@ -31,7 +31,7 @@ body {
 
 .news-link {
   text-decoration: underline;
-  font-family: Futura Hv BT;
+  
   font-size: 24px;
   font-weight: 400;
   line-height: 24.37px;

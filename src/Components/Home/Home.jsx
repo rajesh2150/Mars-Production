@@ -11,7 +11,8 @@ import GlobeCom from "./Carosual/GlobeCom";
 const Home = () => {
   const [loaded, setLoaded] = useState(false);
   const globeEl = useRef(null);
-  const globeImgUrl = "https://www.solarsystemscope.com/textures/download/2k_mars.jpg";
+  const globeImgUrl =
+    "https://www.solarsystemscope.com/textures/download/2k_mars.jpg";
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -27,7 +28,7 @@ const Home = () => {
   },[])
   return (
     <>
-      <div className={`home-wrapper ${loaded ? 'loaded' : ''}`}>
+      <div className={`home-wrapper ${loaded ? "loaded" : ""}`}>
         <div className="carosual-div">
         {/* <GlobeCom/> */}
 

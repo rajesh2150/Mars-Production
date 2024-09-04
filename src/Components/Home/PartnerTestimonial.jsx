@@ -4,7 +4,7 @@ import person2 from "../../assests/Home/Person2.png"
 import person3 from "../../assests/Home/Person3.png"
 import person4 from "../../assests/Home/Person4.png"
 
-const PartnerTestimonial = () => {
+const   PartnerTestimonial = () => {
   const [img, SetImg] = useState(0);
   const handleClick = (ind) => {
     SetImg(ind);

@@ -11,13 +11,13 @@
   -ms-content-zooming: none;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   padding: 0;
   margin: 0;
   overflow: hidden;
-  font-family: helvetica, sans-serif;
 }
 
 #pano {
@@ -33,31 +33,20 @@ html, body {
   cursor: pointer;
 }
 
-#iframespot{
+#iframespot {
 }
 
-#iframeselect {
-  position: absolute;
-  width: 120px;
-  margin-left: -140px;
-  border-radius: 10px;
-  overflow: hidden;
-  opacity: 0.95;
-}
-
-
-#iframeselect li{
+#iframeselect li {
   width: 100%;
   padding: 1em;
   font-size: 12px;
   text-align: center;
   background-color: #444;
   color: #ddd;
-  transition: .3s background-color ease-in-out,
-              .3s color ease-in-out;
+  transition: 0.3s background-color ease-in-out, 0.3s color ease-in-out;
 }
 
-#iframeselect li:hover{
+#iframeselect li:hover {
   background-color: #666;
   color: #fff;
 }
@@ -93,27 +82,41 @@ html, body {
 }
 
 .fade-out {
-  opacity: 0.5 ;
+  opacity: 0.5;
   transition: opacity 2s linear;
 }
-#prevButton, #nextButton {
+#iframeselect {
+  position: absolute;
+  width: 680px;
+  overflow: hidden;
+  opacity: 0.95;
+  margin-top: 10rem;
+  margin-left: -20px;
+}
+#prevButton,
+#nextButton {
   display: inline-block;
   padding: 10px 20px;
-  margin: 10px;
   font-size: 16px;
   color: #fff;
-  background-color: #007bff;
+  background-color: #ff7e35;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
-#prevButton:hover, #nextButton:hover {
+#nextButton {
+  margin-left: 35rem;
+}
+ 
+#prevButton:hover,
+#nextButton:hover {
   background-color: #0056b3;
 }
 
-#prevButton:focus, #nextButton:focus {
+#prevButton:focus,
+#nextButton:focus {
   outline: none;
 }
 

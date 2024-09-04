@@ -16,7 +16,6 @@
 }
 
 .title {
-  font-family: Heavitas;
   font-size: 40px;
   font-weight: 400;
   color: #ff7e35;
@@ -24,8 +23,9 @@
 }
 
 .description {
-  font-family: "Futura Hv BT";
-  font-size: 24px;
+  /* font-family: MDNichromeTest-Infra;
+  src: url("path/GraublauWeb.otf") format("opentype"); */
+  font-size: 20px;
   font-weight: 400;
   line-height: 24.37px;
   text-align: left;
@@ -57,7 +57,7 @@
 }
 
 .logo-item p {
-  font-family: Arial, sans-serif;
+ 
   font-size: 16px;
 }
 
@@ -68,7 +68,6 @@
     padding: 2% -4%;
   }
   .description {
-    font-family: "Futura Hv BT";
     font-size: 20px;
     font-weight: 400;
     line-height: 24.37px;
@@ -78,12 +77,11 @@
   }
 }
 
-@media(min-width:769px) and (max-width:1024px){
-  .how-we-work{
+@media (min-width: 769px) and (max-width: 1024px) {
+  .how-we-work {
     padding: 1% 8% 8% 8%;
   }
   .description {
-    font-family: "Futura Hv BT";
     font-size: 25px;
     font-weight: 400;
     line-height: 24.37px;

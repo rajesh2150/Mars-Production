@@ -4,7 +4,6 @@
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-
 }
 
 .team-wrapper.loaded {
@@ -36,7 +35,6 @@
 }
 
 .team-mem-name {
-  font-family: 'Futura Hv BT';
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 32.49px;
@@ -55,7 +53,6 @@
 }
 
 .team-mem-role {
-  font-family: "Futura Hv BT";
   font-size: 100%;
   font-weight: 400;
   line-height: 24.37px;
@@ -74,12 +71,11 @@
 }
 
 .carrer-p {
-  font-family: Heavitas;
   font-size: 40px;
   font-weight: 400;
   line-height: 40.61px;
   text-align: left;
-  color: #FF7E35;
+  color: #ff7e35;
 }
 
 .carrer-form {
@@ -110,7 +106,7 @@ input:focus {
 .visit-link {
   position: absolute;
   right: 15px;
-  font-family: Futura Hv BT;
+  
   font-size: 32px;
   font-weight: 400;
   line-height: 32.49px;
@@ -121,12 +117,11 @@ input:focus {
 .connect-with-us {
   padding: 1%;
   width: 250px;
-  background-color: #FF7E35;
+  background-color: #ff7e35;
   border-radius: 20px;
 }
 
 .connect-p {
-  font-family: 'Futura Hv BT';
   font-size: 32px;
   font-weight: 400;
   line-height: 32.49px;
@@ -134,7 +129,7 @@ input:focus {
   cursor: pointer;
   padding: 2%;
   margin: 2%;
-  background-color: #FF7E35;
+  background-color: #ff7e35;
   border-radius: 20px;
   border: none;
 }
@@ -173,12 +168,11 @@ input:focus {
   }
 
   .carrer-p {
-    font-family: Heavitas;
     font-size: 30px;
     font-weight: 400;
     line-height: 30.61px;
     text-align: left;
-    color: #FF7E35;
+    color: #ff7e35;
   }
 
   .carrer-form {
@@ -192,12 +186,11 @@ input:focus {
   .connect-with-us {
     padding: 1%;
     width: 70%;
-    background-color: #FF7E35;
+    background-color: #ff7e35;
     border-radius: 20px;
   }
 
   .connect-p {
-    font-family: 'Futura Hv BT';
     font-size: 20px;
     font-weight: 400;
     line-height: 25.49px;

@@ -1,13 +1,13 @@
-import React from 'react'
-import './App.css'
-import {BrowserRouter,Routes,Route} from "react-router-dom";
-import Home from './Components/Home/Home';
-import Navbar from './Components/Navbar/Navbar';
-import AboutUs from './Components/AboutUs/AboutUs';
-import Project from './Components/Project/Project';
-import Partner from './Components/Partner/Partner';
-import HumanOnMars from './Components/HumanOnMars/HumanOnMars';
-import News from './Components/News/News';
+import React from "react";
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Components/Home/Home";
+import Navbar from "./Components/Navbar/Navbar";
+import AboutUs from "./Components/AboutUs/AboutUs";
+import Project from "./Components/Project/Project";
+import Partner from "./Components/Partner/Partner";
+import HumanOnMars from "./Components/HumanOnMars/HumanOnMars";
+import News from "./Components/News/News";
 // import Img1 from "../assets/Home/Mask group.png";
 import Img1 from "./assests/Home/Maskgroup.png"
 import Technology from './Components/Technology/Technology';
@@ -34,9 +34,8 @@ const App = () => {
       </Routes>
       </div>
       </BrowserRouter>
-      
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

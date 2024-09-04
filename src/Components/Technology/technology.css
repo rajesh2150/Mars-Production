@@ -25,7 +25,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 3%;
-  background-color: #343235cc;
+  background-color: #44444450;
+  border-radius: 10px;
 }
 
 .text-content {
