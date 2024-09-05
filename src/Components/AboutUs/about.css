@@ -115,9 +115,12 @@
   font-size: 1.3rem;
   color: #fff;
 }
-@media (max-width: 769px) {
+@media (max-width: 728px) {
   .about-us-wrapper {
     /* padding-inline: 1rem; */
+  }
+  .second-main-div{
+    height: 85vh;
   }
   .main-div {
     margin-top: 10%;
@@ -186,8 +189,10 @@
     padding: 15% 3%;
   }
   .p-desc {
-    max-width: 76%;
+    font-size: 1rem;
+    max-width: 95%;
   }
+  
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -264,7 +269,7 @@
   }
   .second-main-div {
     margin-top: 20%;
-    height: 60vh;
+    height: 65vh;
     width: 74vw;
     background-color: #44444450;
     display: flex;
