@@ -75,7 +75,7 @@
 }
 
 .carousel-heading {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 400;
   line-height: 1.2;
   text-align: left;
@@ -85,7 +85,7 @@
 }
 
 .carousel-paragraph {
-  font-size: 20px;
+  font-size: 1.25rem;
   /* line-height: 24.37px; */
   text-align: left;
   color: #ffffff;
@@ -94,7 +94,7 @@
 }
 
 .carousel-link {
-  font-size: 20px;
+  font-size: 1.2rem;
   background-color: #ff7e35;
   text-decoration: none;
   color: #fff;
@@ -145,7 +145,7 @@
 
 @media (max-width: 768px) {
   .carousel-wrapper {
-    height: 45vh;
+    min-height: 45vh;
     width: 90vw;
     background-color: #44444450;
     /* padding: 0px; */
@@ -210,8 +210,8 @@
     margin-bottom: 2%;
   }
   .carousel-link {
-    font-size: 16px;
-    font-weight: 200;
+    font-size: 10px;
+    font-weight: 300;
     line-height: 100%;
     text-decoration: none;
     background-color: transparent;
@@ -281,7 +281,7 @@
     font-weight: 400;
     line-height: 100%;
     text-align: left;
-    color: #ff7e35;
+    /* color: #ff7e35; */
     text-decoration: none;
   }
 }
