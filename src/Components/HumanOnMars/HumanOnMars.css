@@ -134,7 +134,7 @@ input:focus {
   border: none;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   .team-p1 {
     margin-top: 5%;
     font-size: 18px;
@@ -168,7 +168,7 @@ input:focus {
   }
 
   .carrer-p {
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 400;
     line-height: 30.61px;
     text-align: left;

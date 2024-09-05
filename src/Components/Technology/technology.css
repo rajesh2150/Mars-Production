@@ -74,8 +74,11 @@
   object-fit: cover;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   .project-wrapper {
+    /* height: 100vh; */
+  }
+  .technology-wrapper{
     height: 100vh;
   }
 
