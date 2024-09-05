@@ -7,33 +7,6 @@ const News = () => {
   const [activeTab, setActiveTab] = useState("latest");
 
 const [prevNews,setPrevNews] = useState([])
-  const previousNews = [
-    {
-      id: 1,
-      month: "July 2020",
-      url: "",
-    },
-    {
-      id: 2,
-      month: "August 2020",
-      url: "",
-    },
-    {
-      id: 3,
-      month: "September 2020",
-      url: "",
-    },
-    {
-      id: 4,
-      month: "October 2020",
-      url: "",
-    },
-    {
-      id: 5,
-      month: "November 2020",
-      url: "",
-    },
-  ];
 
   const location = useLocation();
 
@@ -134,7 +107,7 @@ const [prevNews,setPrevNews] = useState([])
                 })}
               </div>
             ) : (
-              <div className="blog-list">
+              <div className="blog-list event-list">
                 {events.map((event, ind) => {
                   const blogUrl = `http://13.201.135.134:1337${event?.attributes?.image?.data[0]?.attributes?.url}`;
                   const url = event?.attributes?.Link;
@@ -172,7 +145,7 @@ const [prevNews,setPrevNews] = useState([])
             <>
               <div key={news.id} className="prev-div">
                 <a className="news-month" target="_blank" href={news?.attributes?.Link}>
-                  <div style={{height:'150px',width:'150px',backgroundColor:"#D3D3D3"}}>
+                  <div style={{height:'150px',minWidth:'150px',backgroundColor:"#D3D3D3"}}>
                 <img className="prev-news-image" src={"https://www.pngall.com/wp-content/uploads/9/Google-Drive-Logo-PNG-HD-Image.png"}  />
                   </div>
                  <br/> {news?.attributes?.month}
