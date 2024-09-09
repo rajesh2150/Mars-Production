@@ -73,9 +73,9 @@ var hotspotHtml = {
   video4:
     '<video width="990" height="350" controls><source src="http://13.201.135.134:1337/uploads/sad_song_f4086f7457.mp4" type="video/mp4">Your browser does not support the video tag.</video>',
   video5:
-    '<video width="990" height="350" controls><source src="../src/assets/Video/love song.mp4" type="video/mp4">Your browser does not support the video tag.</video>',
+    '<video width="990" height="350" controls><source src="http://13.201.135.134:1337/uploads/love_song_be0a88ad29.mp4" type="video/mp4">Your browser does not support the video tag.</video>',
   video6:
-    '<video width="990" height="350" controls><source src="../src/assets/Video/bantu thata song.mp4" type="video/mp4">Your browser does not support the video tag.</video>',
+    '<video width="990" height="350" controls><source src="http://13.201.135.134:1337/uploads/Sankranthi_song_2aea6bf51f.mp4" type="video/mp4">Your browser does not support the video tag.</video>',
 };
 
 var player; // YouTube player instance
