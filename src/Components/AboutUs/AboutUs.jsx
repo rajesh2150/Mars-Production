@@ -38,14 +38,14 @@ const AboutUs = () => {
                 registered with Google as a Digital company on 14th May 2020.
               </p>
             </div>
-            <div className="leftside-two">
+            {/* <div className="leftside-two">
               <p className="aboutus-p1">Founders Note</p>
               <p className="aboutus-p2">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
               </p>
-            </div>
+            </div> */}
           </div>
           <div className="right-side">
             <img
