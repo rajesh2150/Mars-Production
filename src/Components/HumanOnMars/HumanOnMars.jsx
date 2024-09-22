@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Footer from "../common/Footer";
 import "./HumanOnMars.css";
 import { useLocation } from "react-router-dom";
@@ -33,12 +33,7 @@ const HumanOnMars = () => {
       url: Person1,
       role: "Chief Executive Officer",
     },
-    {
-      id: 2,
-      name: "Rohith Sanjeevi",
-      url: Person2,
-      role: "Writer, Memer",
-    },
+
     {
       id: 3,
       name: "Girish Kumar",
@@ -59,10 +54,10 @@ const HumanOnMars = () => {
 
     const payload = {
       data: {
-       Name: name,
-       Email: email,
-       Role: role,
-        Message :message,
+        Name: name,
+        Email: email,
+        Role: role,
+        Message: message,
       },
     };
 
@@ -151,7 +146,7 @@ const HumanOnMars = () => {
                 required
               />
               <br />
-              <button className="connect-p" type="submit" >
+              <button className="connect-p" type="submit">
                 {isSubmitting ? "Submitting..." : "Connect with us"}
               </button>
             </form>
