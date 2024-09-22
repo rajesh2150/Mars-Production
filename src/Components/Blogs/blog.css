@@ -6,7 +6,7 @@
 .blogs-contaainer {
   width: 80%;
   min-height: 90vh;
-  background-color: #FFE5B6;
+  background-color: #ffe5b6;
   margin: 0 auto;
   border-radius: 10px;
   box-shadow: 0 2px 1px 4px rgba(0, 0, 0, 0.1);
@@ -58,12 +58,16 @@
 .banner_image {
   width: 100%;
   height: 60vh;
+  margin-bottom: 1rem;
 }
 .banner_image > img {
   width: 100%;
   height: 100%;
-  border-radius: 4px;
+  border-radius: 10px;
   object-fit: fill;
+}
+.Heading{
+  margin-bottom: .5rem;
 }
 .body-content {
   margin-block: 2rem;
@@ -82,8 +86,8 @@
   word-spacing: 6px;
   column-gap: 2rem;
 }
-.body-content > h4{
-    text-align: right;
-    font-size: large;
-    margin-top: 1rem;
+.body-content > h4 {
+  text-align: right;
+  font-size: large;
+  margin-top: 1rem;
 }
