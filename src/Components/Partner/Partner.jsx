@@ -99,13 +99,16 @@ const Partner = () => {
               </p>
             </div>
             <div className="partners">
-              <img
-                // className="partner-logo"
-                style={{objectFit:"contain"}}
-                src="http://13.201.135.134:1337/uploads/thumbnail_FINAL_LOGO_CX_in_white_cf0956b7e4.png"
-                alt="Dinesh Narra Photography"
-              />
-              <p className="partner-name" style={{marginTop:"6.8rem"}}>CalciteX</p>
+              <div style={{ height: "70%", width: "70%" , display:"flex",alignItems:"center"}}>
+                <img
+                  style={{ objectFit: "contain" }}
+                  src="http://13.201.135.134:1337/uploads/thumbnail_FINAL_LOGO_CX_in_white_cf0956b7e4.png"
+                  alt="Dinesh Narra Photography"
+                />
+              </div>
+
+              <p className="partner-name">CalciteX</p>
+              <p className="partner-description">Technical partners</p>
             </div>
           </div>
         </div>
