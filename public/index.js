@@ -62,21 +62,50 @@ container.createHotspot(document.getElementById("iframeselect"), {
   pitch: -0.239,
 });
 
-// HTML sources.
-var hotspotHtml = {
-  video1:
-    '<video width="990" height="350" controls><source src="https://admin.marsmovieproductions.com/uploads/bandtu_thata_song_6013d95176.mp4" type="video/mp4">Your browser does not support the video tag.</video>',
-  video2:
-    '<video width="990" height="350" controls><source src="https://admin.marsmovieproductions.com/uploads/power_song_1d6a8e8e5c.mp4" type="video/mp4">Your browser does not support the video tag.</video>',
-  video3:
-    '<video width="990" height="350" controls><source src="https://admin.marsmovieproductions.com/uploads/romance_song_13cebca37a.mp4" type="video/mp4">Your browser does not support the video tag.</video>',
-  video4:
-    '<video width="990" height="350" controls><source src="https://admin.marsmovieproductions.com/uploads/sad_song_f4086f7457.mp4" type="video/mp4">Your browser does not support the video tag.</video>',
-  video5:
-    '<video width="990" height="350" controls><source src="https://admin.marsmovieproductions.com/uploads/love_song_be0a88ad29.mp4" type="video/mp4">Your browser does not support the video tag.</video>',
-  video6:
-    '<video width="990" height="350" controls><source src="https://admin.marsmovieproductions.com/uploads/Sankranthi_song_2aea6bf51f.mp4" type="video/mp4">Your browser does not support the video tag.</video>',
-};
+// Declare hotspotHtml in a broader scope
+var hotspotHtml = {}; // Make hotspotHtml globally accessible
+document.addEventListener("DOMContentLoaded", function () {
+  const api = "https://admin.marsmovieproductions.com/api/talkies?populate=*";
+
+  // Function to fetch data from the API
+  async function fetchData() {
+    try {
+      const response = await fetch(api);
+      if (!response.ok) {
+        console.error(`Error: ${response.status} - ${response.statusText}`);
+        throw new Error(`Network response was not ok: ${response.status}`);
+      }
+      const data = await response.json();
+      console.log(data); // Do something with the data
+      updateHotspotHtml(data);
+    } catch (error) {
+      console.error("There was a problem with the fetch operation:", error);
+    }
+  }
+
+  // Function to update hotspotHtml based on fetched data
+  function updateHotspotHtml(data) {
+    // Assuming 'data' is structured as you provided, adjust if necessary
+    const videos = data.data; // Adjust based on your actual data structure
+
+    hotspotHtml = {}; // Reset hotspotHtml to avoid duplication
+
+    videos.forEach((video, index) => {
+      const videoUrl = `https://admin.marsmovieproductions.com${video.attributes.Video.data.attributes.url}`;
+      const thumbnailUrl = `https://admin.marsmovieproductions.com${video.attributes.Thumbnail.data.attributes.url}`;
+      hotspotHtml[`video${index + 1}`] = `
+        <video width="990" height="350" controls poster="${thumbnailUrl}">
+          <source src="${videoUrl}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>`;
+    });
+
+    console.log(hotspotHtml); // Log updated hotspotHtml for verification
+  }
+
+  // Call the fetchData function when the page loads
+  fetchData();
+});
 
 var player; // YouTube player instance
 var currentIndex = 0; // Keep track of the current iframe
@@ -87,6 +116,11 @@ function onYouTubeIframeAPIReady() {
 
 function switchHotspot(index) {
   var ids = Object.keys(hotspotHtml);
+  if (ids.length === 0) {
+    console.error("No videos available to switch to.");
+    return;
+  }
+
   var id = ids[index];
   var wrapper = document.getElementById("iframespot");
 
