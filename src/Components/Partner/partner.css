@@ -98,17 +98,20 @@
     max-width: 80%;
   }
   
-  @media only screen and (max-width: 769px) {
-  .project-wrapper {
-    padding: 5% 18%;
+  @media only screen and (max-width: 768px) {
+
+ 
+  .partner-wrapper{
+    height: 100%;
   }
 
   .partner-main {
     flex-direction: column;
     align-items: flex-start;
-    margin:10px -20px 160px -36px;
+    margin:10px -20px 160px -20px;
     padding-right: 0;
     width: 80vw;
+    height: max-content;
   }
 
   .partners-section {
@@ -163,6 +166,7 @@
   }
 
   .partner-logo {
+    background-color: aliceblue;
     max-width: 100%;
     height: 30vh;
     width: 100vw;
@@ -175,7 +179,7 @@
   }
 
   .partner-description {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     max-width: 100%;
   }
 }

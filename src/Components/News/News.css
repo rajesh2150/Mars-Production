@@ -90,32 +90,50 @@ body {
 }
 /* Media Query for max-width 769px */
 @media only screen and (max-width: 769px) {
+  .news-hero-wrapper{
+    padding: 5% 2%;
+  }
   .news-p {
     font-size: 20px;
     line-height: 18px;
   }
+  .blog-item{
+    height: 10vh;
+    width: 100%;
+  }
 
+  .blog-title{
+    max-width: 90%;
+    font-size: 0.65rem;
+  }
+  .event-list{
+    margin: 8px 8px 10px -13px;
+  }
+  .scroll-btn{
+    display: none;
+  }
   .news-wrapper {
     padding: 5% 0;
+    width: 95%; /* Full width */
+   
   }
 
   .news-p2 {
-    font-size: 20px;
+    font-size: 1rem;
     line-height: 20px;
     padding: 2% 0;
   }
 
   .news-link {
-  
     font-size: 18px;
     line-height: 20px;
     color: red;
     text-decoration: none;
   }
-  .news-link-text{
+
+  .news-link-text {
     color: white;
     text-decoration: none;
-
   }
 
   .news-image {
@@ -129,7 +147,7 @@ body {
     object-fit: cover;
   }
 
-  .news-month{
+  .news-month {
     text-decoration: none;
     color: white;
   }
@@ -141,7 +159,7 @@ body {
 
   .scroll-btn {
     cursor: pointer;
-    margin: 40px 40px 40px 40px;
+    margin: 40px;
   }
 
   .prev-news-image {
@@ -151,9 +169,11 @@ body {
 
   .previous-news-wrapper {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
     align-items: center;
+    overflow-x: scroll; /* Horizontal scrolling for the previous news section */
+    white-space: nowrap; /* Prevents the items from wrapping to the next line */
   }
 
   .prev-news-image {

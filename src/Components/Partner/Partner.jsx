@@ -22,7 +22,7 @@ const Partner = () => {
   }, [location]);
   return (
     <>
-      <div className="project-wrapper">
+      <div className="project-wrapper partner-wrapper">
         <div className="main-div partner-main">
           <div>
             <p className="p1">How our partnership works</p>

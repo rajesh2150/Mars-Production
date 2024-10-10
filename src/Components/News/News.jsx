@@ -6,6 +6,7 @@ import NewsImg from "../../assests/News/News.png";
 const News = () => {
   const [activeTab, setActiveTab] = useState("latest");
 
+
   const [prevNews, setPrevNews] = useState([]);
   const previousNews = [
     {
@@ -34,6 +35,7 @@ const News = () => {
       url: "",
     },
   ];
+
 
   const location = useLocation();
 
@@ -147,7 +149,7 @@ const News = () => {
                 })}
               </div>
             ) : (
-              <div className="blog-list">
+              <div className="blog-list event-list">
                 {events.map((event, ind) => {
                   const blogUrl = `https://admin.marsmovieproductions.com${event?.attributes?.image?.data[0]?.attributes?.url}`;
                   const url = event?.attributes?.Link;
@@ -184,6 +186,7 @@ const News = () => {
           {prevNews?.map((news, ind) => (
             <>
               <div key={news.id} className="prev-div">
+
                 <a
                   className="news-month"
                   target="_blank"
@@ -202,6 +205,7 @@ const News = () => {
                         "https://www.pngall.com/wp-content/uploads/9/Google-Drive-Logo-PNG-HD-Image.png"
                       }
                     />
+
                   </div>
                   <br /> {news?.attributes?.month}
                 </a>
