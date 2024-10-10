@@ -1,20 +1,14 @@
-
-import React from 'react'
+import React from "react";
 
 const Project = () => {
   return (
     <div>
-    {/* <div dangerouslySetInnerHTML={{ __html: '../../VR/index.html' }} /> */}
-  </div>
+      {/* <div dangerouslySetInnerHTML={{ __html: '../../VR/index.html' }} /> */}
+    </div>
+  );
+};
 
-  )
-}
-
-export default Project
-
-
-
-
+export default Project;
 
 // import React, { useEffect, useState } from "react";
 // import { useLocation } from "react-router-dom";
@@ -40,10 +34,10 @@ export default Project
 //   useEffect(() => {
 //     async function fetchData() {
 //       const resp = await fetch(
-//         "http://13.201.135.134:1337/api/completd-projects?populate=*"
+//         "https://admin.marsmovieproductions.com/api/completd-projects?populate=*"
 //       );
 //       const resp2 = await fetch(
-//         "http://13.201.135.134:1337/api/ongoing-projects?populate=*"
+//         "https://admin.marsmovieproductions.com/api/ongoing-projects?populate=*"
 //       );
 //       const res = await resp.json();
 //       const res2 = await resp2.json();
@@ -84,11 +78,10 @@ export default Project
 //         </div>
 //         <p className="p1 ongoing-p1">Ongoing</p>
 //         {ongoing.map((ongo, ind) => {
-// const imageUrl = `http://13.201.135.134:1337${ongo?.attributes.image.data[0].attributes.url}`;
+// const imageUrl = `https://admin.marsmovieproductions.com/${ongo?.attributes.image.data[0].attributes.url}`;
 
 // // [0].attributes.image.data[0].attributes.url
 // // [0].attributes.image.data.attributes.url
-          
 
 //           return (
 //             <>

@@ -7,11 +7,10 @@ const Blogs = () => {
   const handleBlogs = async () => {
     try {
       const response = await axios.get(
-        "http://13.201.135.134:1337/api/blog-dynamics?populate=*"
+        "https://admin.marsmovieproductions.com/api/blog-dynamics?populate=*"
       );
       if (response.status === 200) {
         setBlogs(response.data.data);
-        console.log(response.data.data[0]);
       }
     } catch (error) {
       console.error(error);
@@ -55,7 +54,7 @@ const Blogs = () => {
               <>
                 <div className="banner_image">
                   <img
-                    src={`http://13.201.135.134:1337${item?.attributes?.Banner_image?.data?.attributes?.url}`}
+                    src={`https://admin.marsmovieproductions.com${item?.attributes?.Banner_image?.data?.attributes?.url}`}
                     alt="Blog banner"
                   />
                 </div>
@@ -74,7 +73,7 @@ const Blogs = () => {
                   <p>
                     <div className="banner_image">
                       <img
-                        src={`http://13.201.135.134:1337${item?.attributes?.Banner_image?.data?.attributes?.url}`}
+                        src={`https://admin.marsmovieproductions.com${item?.attributes?.Banner_image?.data?.attributes?.url}`}
                         alt="Blog banner"
                       />
                     </div>

@@ -7,21 +7,23 @@ const Technology = () => {
   const location = useLocation();
 
   useEffect(() => {
-    const projectWrapper = document.querySelector('.project-wrapper');
+    const projectWrapper = document.querySelector(".project-wrapper");
     if (projectWrapper) {
-      projectWrapper.classList.remove('loaded');
+      projectWrapper.classList.remove("loaded");
       const timeoutId = setTimeout(() => {
-        projectWrapper.classList.add('loaded');
+        projectWrapper.classList.add("loaded");
       }, 50);
       return () => clearTimeout(timeoutId); // Cleanup on unmount or before re-run
     }
   }, [location]);
 
-  //fetch data 
+  //fetch data
   const [data, setData] = useState([]);
   useEffect(() => {
     async function fetchData() {
-      const resp = await fetch("http://13.201.135.134:1337/api/technologies?populate=*");
+      const resp = await fetch(
+        "https://admin.marsmovieproductions.com/api/technologies?populate=*"
+      );
       const res = await resp.json();
       console.log(res.data);
       setData(res.data);
@@ -35,7 +37,7 @@ const Technology = () => {
         <div className="main-div-tech tech-main">
           {data?.map((tech, ind) => {
             const { title, description, image } = tech.attributes;
-            const imageUrl = `http://13.201.135.134:1337${image?.data[0]?.attributes?.url}`;
+            const imageUrl = `https://admin.marsmovieproductions.com${image?.data[0]?.attributes?.url}`;
             return (
               <div key={ind} className="sub-div">
                 <div className="text-content">
@@ -43,11 +45,7 @@ const Technology = () => {
                   <p className="p2">{description}</p>
                 </div>
                 <div className="image-content">
-                  <img
-                    className="tech-image"
-                    src={imageUrl}
-                    alt={title}
-                  />
+                  <img className="tech-image" src={imageUrl} alt={title} />
                 </div>
               </div>
             );

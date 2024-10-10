@@ -65,17 +65,17 @@ container.createHotspot(document.getElementById("iframeselect"), {
 // HTML sources.
 var hotspotHtml = {
   video1:
-    '<video width="990" height="350" controls><source src="http://13.201.135.134:1337/uploads/bandtu_thata_song_6013d95176.mp4" type="video/mp4">Your browser does not support the video tag.</video>',
+    '<video width="990" height="350" controls><source src="https://admin.marsmovieproductions.com/uploads/bandtu_thata_song_6013d95176.mp4" type="video/mp4">Your browser does not support the video tag.</video>',
   video2:
-    '<video width="990" height="350" controls><source src="http://13.201.135.134:1337/uploads/power_song_1d6a8e8e5c.mp4" type="video/mp4">Your browser does not support the video tag.</video>',
+    '<video width="990" height="350" controls><source src="https://admin.marsmovieproductions.com/uploads/power_song_1d6a8e8e5c.mp4" type="video/mp4">Your browser does not support the video tag.</video>',
   video3:
-    '<video width="990" height="350" controls><source src="http://13.201.135.134:1337/uploads/romance_song_13cebca37a.mp4" type="video/mp4">Your browser does not support the video tag.</video>',
+    '<video width="990" height="350" controls><source src="https://admin.marsmovieproductions.com/uploads/romance_song_13cebca37a.mp4" type="video/mp4">Your browser does not support the video tag.</video>',
   video4:
-    '<video width="990" height="350" controls><source src="http://13.201.135.134:1337/uploads/sad_song_f4086f7457.mp4" type="video/mp4">Your browser does not support the video tag.</video>',
+    '<video width="990" height="350" controls><source src="https://admin.marsmovieproductions.com/uploads/sad_song_f4086f7457.mp4" type="video/mp4">Your browser does not support the video tag.</video>',
   video5:
-    '<video width="990" height="350" controls><source src="http://13.201.135.134:1337/uploads/love_song_be0a88ad29.mp4" type="video/mp4">Your browser does not support the video tag.</video>',
+    '<video width="990" height="350" controls><source src="https://admin.marsmovieproductions.com/uploads/love_song_be0a88ad29.mp4" type="video/mp4">Your browser does not support the video tag.</video>',
   video6:
-    '<video width="990" height="350" controls><source src="http://13.201.135.134:1337/uploads/Sankranthi_song_2aea6bf51f.mp4" type="video/mp4">Your browser does not support the video tag.</video>',
+    '<video width="990" height="350" controls><source src="https://admin.marsmovieproductions.com/uploads/Sankranthi_song_2aea6bf51f.mp4" type="video/mp4">Your browser does not support the video tag.</video>',
 };
 
 var player; // YouTube player instance
