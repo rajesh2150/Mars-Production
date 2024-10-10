@@ -66,8 +66,8 @@
   border-radius: 10px;
   object-fit: fill;
 }
-.Heading{
-  margin-bottom: .5rem;
+.Heading {
+  margin-bottom: 0.5rem;
 }
 .body-content {
   margin-block: 2rem;
@@ -90,4 +90,30 @@
   text-align: right;
   font-size: large;
   margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .blogs-contaainer {
+    width: 96%;
+  padding: 1rem;
+
+  }
+  .main-header-card {
+    flex-direction: column;
+  }
+  .center-header-card {
+    font-size: 16px;
+    letter-spacing: 0px;
+    margin-block: 1rem;
+  }
+  .banner_image {
+    height: 40vh;
+  }
+  .body-content > p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    column-count: 1;
+    word-spacing: 4px;
+    column-gap: 0rem;
+  }
 }

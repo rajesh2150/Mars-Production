@@ -62,13 +62,16 @@ const HumanOnMars = () => {
     };
 
     try {
-      const response = await fetch("http://13.201.135.134:1337/api/Careers", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(payload),
-      });
+      const response = await fetch(
+        "https://admin.marsmovieproductions.com/api/Careers",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload),
+        }
+      );
 
       if (response.ok) {
         // Handle success, like showing a success message or clearing the form

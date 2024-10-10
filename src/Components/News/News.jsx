@@ -6,7 +6,7 @@ import NewsImg from "../../assests/News/News.png";
 const News = () => {
   const [activeTab, setActiveTab] = useState("latest");
 
-const [prevNews,setPrevNews] = useState([])
+  const [prevNews, setPrevNews] = useState([]);
   const previousNews = [
     {
       id: 1,
@@ -53,22 +53,22 @@ const [prevNews,setPrevNews] = useState([])
   useEffect(() => {
     async function fetchData() {
       const resp = await fetch(
-        "http://13.201.135.134:1337/api/events?populate=*"
+        "https://admin.marsmovieproductions.com/api/events?populate=*"
       );
       const resp2 = await fetch(
-        "http://13.201.135.134:1337/api/news-blogs?populate=*"
+        "https://admin.marsmovieproductions.com/api/news-blogs?populate=*"
       );
       const resp3 = await fetch(
-        "http://13.201.135.134:1337/api/news-letters"
+        "https://admin.marsmovieproductions.com/api/news-letters"
       );
 
       const res = await resp.json();
       const res2 = await resp2.json();
       const res3 = await resp3.json();
-      console.log("prev",res3.data);
+      console.log("prev", res3.data);
       setEvents(res.data);
       setBlogs(res2.data);
-      setPrevNews(res3.data)
+      setPrevNews(res3.data);
     }
     fetchData();
   }, []);
@@ -79,10 +79,12 @@ const [prevNews,setPrevNews] = useState([])
         <p className="p2 news-p2">This is our latest newsletter.</p>
         <p className="p2 news-p2">
           To view all our previous newsletters, go to
-          <a className="news-link" href="https://www.youtube.com/@MarsProductionsPvtLtd">
+          <a
+            className="news-link"
+            href="https://www.youtube.com/@MarsProductionsPvtLtd"
+          >
             {" "}
-           <p className="news-link-text"> our YouTube channel.</p>
-         
+            <p className="news-link-text"> our YouTube channel.</p>
           </a>
         </p>
         <div className="upcoming-hero">
@@ -91,12 +93,14 @@ const [prevNews,setPrevNews] = useState([])
           <div className="options">
             <p
               className={`tab ${activeTab === "latest" ? "active" : ""}`}
-              onClick={() => setActiveTab("latest")}>
+              onClick={() => setActiveTab("latest")}
+            >
               Blogs
             </p>
             <p
               className={`tab ${activeTab === "blogs" ? "active" : ""}`}
-              onClick={() => setActiveTab("blogs")}>
+              onClick={() => setActiveTab("blogs")}
+            >
               Events
             </p>
           </div>
@@ -105,13 +109,22 @@ const [prevNews,setPrevNews] = useState([])
 
         <div className="upcoming-wrapper news-wrapper">
           <div className="upcoming-image news-image">
-          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZWlCUxnBkhw?si=SGxN3xrmlhJA1c2W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/ZWlCUxnBkhw?si=SGxN3xrmlhJA1c2W"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
           </div>
           <div className="upcoming-details">
             {activeTab === "latest" ? (
               <div className="latest-content">
                 {blogs?.map((blog, ind) => {
-                  const blogUrl = `http://13.201.135.134:1337${blog?.attributes?.image?.data[0]?.attributes?.url}`;
+                  const blogUrl = `https://admin.marsmovieproductions.com/${blog?.attributes?.image?.data[0]?.attributes?.url}`;
                   // [0].attributes.image.data[0].attributes.url
                   const url = blog?.attributes?.Link;
 
@@ -136,7 +149,7 @@ const [prevNews,setPrevNews] = useState([])
             ) : (
               <div className="blog-list">
                 {events.map((event, ind) => {
-                  const blogUrl = `http://13.201.135.134:1337${event?.attributes?.image?.data[0]?.attributes?.url}`;
+                  const blogUrl = `https://admin.marsmovieproductions.com/${event?.attributes?.image?.data[0]?.attributes?.url}`;
                   const url = event?.attributes?.Link;
 
                   return (
@@ -171,17 +184,31 @@ const [prevNews,setPrevNews] = useState([])
           {prevNews?.map((news, ind) => (
             <>
               <div key={news.id} className="prev-div">
-                <a className="news-month" target="_blank" href={news?.attributes?.Link}>
-                  <div style={{height:'150px',width:'150px',backgroundColor:"#D3D3D3"}}>
-                <img className="prev-news-image" src={"https://www.pngall.com/wp-content/uploads/9/Google-Drive-Logo-PNG-HD-Image.png"}  />
+                <a
+                  className="news-month"
+                  target="_blank"
+                  href={news?.attributes?.Link}
+                >
+                  <div
+                    style={{
+                      height: "150px",
+                      width: "150px",
+                      backgroundColor: "#D3D3D3",
+                    }}
+                  >
+                    <img
+                      className="prev-news-image"
+                      src={
+                        "https://www.pngall.com/wp-content/uploads/9/Google-Drive-Logo-PNG-HD-Image.png"
+                      }
+                    />
                   </div>
-                 <br/> {news?.attributes?.month}
-                  </a>
+                  <br /> {news?.attributes?.month}
+                </a>
                 {/* <p className="p2">{news.month}</p> */}
               </div>
             </>
           ))}
-
 
           <div className="p1 scroll-btn ">&gt;</div>
         </div>

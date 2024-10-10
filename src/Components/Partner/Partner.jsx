@@ -89,7 +89,9 @@ const Partner = () => {
             <div className="partner">
               <img
                 className="partner-logo"
-                src={Partner3}
+                src={
+                  "https://admin.marsmovieproductions.com/uploads/thumbnail_dinesh_removebg_preview_d9ebd70923.png?updatedAt=2024-10-08T07%3A03%3A33.965Z"
+                }
                 alt="Dinesh Narra Photography"
               />
               <p className="partner-name">Dinesh Narra Photography</p>
@@ -99,10 +101,17 @@ const Partner = () => {
               </p>
             </div>
             <div className="partners">
-              <div style={{ height: "70%", width: "70%" , display:"flex",alignItems:"center"}}>
+              <div
+                style={{
+                  height: "70%",
+                  width: "70%",
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
                 <img
                   style={{ objectFit: "contain" }}
-                  src="http://13.201.135.134:1337/uploads/thumbnail_FINAL_LOGO_CX_in_white_cf0956b7e4.png"
+                  src="https://admin.marsmovieproductions.com/uploads/thumbnail_FINAL_LOGO_CX_in_white_cf0956b7e4.png"
                   alt="Dinesh Narra Photography"
                 />
               </div>
