@@ -23,11 +23,8 @@ const Upcoming = () => {
       const res = await resp.json();
       const res2 = await resp2.json();
       const res3 = await resp3.json();
-      console.log(res.data);
-      console.log(
-        "upcoming is ",
-        res3.data[0].attributes.image.data[0].attributes.url
-      );
+      console.log(res3.data);
+
       setLatest(res.data);
       setBlogs(res2.data);
       setUpcoming(res3.data);
@@ -63,7 +60,6 @@ const Upcoming = () => {
           <img
             className="poster"
             src={`https://admin.marsmovieproductions.com${upcoming[0]?.attributes?.image?.data[0]?.attributes?.url}`}
-
             alt="Upcoming Movie Poster"
           />
           <div className="visit-now">
@@ -80,7 +76,6 @@ const Upcoming = () => {
           {activeTab === "latest" ? (
             <div className="latest-content">
               {latest?.map((latest, ind) => {
-                const imgurl = `https://admin.marsmovieproductions.com${latest?.attributes?.image?.data[0]?.attributes?.url}`;
                 const url = latest?.attributes?.Link;
 
                 // [0].attributes.image.data[0].attributes.url
@@ -88,15 +83,22 @@ const Upcoming = () => {
                 return (
                   <>
                     <div className="latest-item">
-                      <div className="blog-item">
+                      <div
+                        className="blog-item"
+                        style={{ display: "flex", alignItems: "center" }}
+                      >
                         <a href={url} target="_blank">
                           <img
                             className="blog-image"
-                            src={imgurl}
+                            src={`https://admin.marsmovieproductions.com${latest?.attributes?.image?.data[0]?.attributes?.url}`}
                             alt={latest?.attributes?.title}
+                            style={{ width: "160px", height: "100px" }}
                           />
                         </a>
-                        <p className="blog-title">
+                        <p
+                          className="blog-title"
+                          style={{ marginLeft: "1rem" }}
+                        >
                           {latest?.attributes?.title}
                         </p>
                       </div>
