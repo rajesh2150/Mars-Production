@@ -37,7 +37,7 @@ const Technology = () => {
         <div className="main-div-tech tech-main">
           {data?.map((tech, ind) => {
             const { title, description, image } = tech.attributes;
-            const imageUrl = `https://admin.marsmovieproductions.com/${image?.data[0]?.attributes?.url}`;
+            const imageUrl = `https://admin.marsmovieproductions.com${image?.data[0]?.attributes?.url}`;
             return (
               <div key={ind} className="sub-div">
                 <div className="text-content">

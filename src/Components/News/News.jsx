@@ -124,7 +124,7 @@ const News = () => {
             {activeTab === "latest" ? (
               <div className="latest-content">
                 {blogs?.map((blog, ind) => {
-                  const blogUrl = `https://admin.marsmovieproductions.com/${blog?.attributes?.image?.data[0]?.attributes?.url}`;
+                  const blogUrl = `https://admin.marsmovieproductions.com${blog?.attributes?.image?.data[0]?.attributes?.url}`;
                   // [0].attributes.image.data[0].attributes.url
                   const url = blog?.attributes?.Link;
 
@@ -149,7 +149,7 @@ const News = () => {
             ) : (
               <div className="blog-list">
                 {events.map((event, ind) => {
-                  const blogUrl = `https://admin.marsmovieproductions.com/${event?.attributes?.image?.data[0]?.attributes?.url}`;
+                  const blogUrl = `https://admin.marsmovieproductions.com${event?.attributes?.image?.data[0]?.attributes?.url}`;
                   const url = event?.attributes?.Link;
 
                   return (
